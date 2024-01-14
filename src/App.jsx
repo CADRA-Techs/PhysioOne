@@ -11,7 +11,6 @@ const App = () => (
     <BrowserRouter basename={AppRoutes.pathAppBase}>
       <Navigation />
     </BrowserRouter>
-    <navigation />
   </div>
 );
 ReactDOM.render(<App />, document.getElementById("app"));
