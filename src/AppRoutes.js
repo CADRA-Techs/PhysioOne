@@ -3,7 +3,7 @@ import React from "react";
 const pathAppBase = "";
 // const pathPageLogin = "/login";
 
-const pathHome = `/`;
+const pathHome = `/home`;
 const home = React.lazy(() => import("./pages/home/home"));
 const routeUserManagement = {
   path: pathHome,
