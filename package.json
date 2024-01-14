@@ -5,7 +5,8 @@
     "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
     "build:start": "cd dist && PORT=3000 npx serve",
-    "dev": "webpack serve --open --mode production",
+    "prod": "webpack serve --open --mode production",
+    "dev": "webpack serve --open --mode development",
     "dev:live": "webpack serve --open --mode development --live-reload --hot"
   },
   "license": "MIT",
@@ -34,6 +35,7 @@
   "dependencies": {
     "@babel/runtime": "^7.13.10",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.2"
   }
 }

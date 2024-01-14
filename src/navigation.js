@@ -1,23 +1,26 @@
 import React, { Suspense } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import AppRoutes from "./AppRoutes";
 
 function Navigation() {
+  const navigate = useNavigate();
   return (
     <Suspense fallback={<div></div>}>
       <Routes>
         {AppRoutes.routes.map((route, idx) => {
           return route.element ? (
-            <Route
-              key={idx}
-              exact
-              path={route.path}
-              element={<route.element />}
-            />
+            <Route key={idx} path={route.path} element={<route.element />} />
           ) : null;
         })}
-        <Route exact path="*" element={<div>404 Page Not Found</div>} />
+        <Route path="*" element={<div>404 Page Not Found</div>} />
       </Routes>
+      <button
+        onClick={() => {
+          navigate("/home");
+        }}
+      >
+        Home
+      </button>
     </Suspense>
   );
 }
