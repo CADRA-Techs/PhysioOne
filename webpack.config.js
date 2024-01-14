@@ -1,12 +1,20 @@
 const { merge } = require("webpack-merge");
+const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
-
+const APP_PUBLIC_PATH = process.env.REACT_APP_PUBLIC_PATH;
 const deps = require("./package.json").dependencies;
+console.log(path);
 
 const commonConfig = {
+  entry: {
+    remote: "./src/index.js",
+  },
   output: {
-    publicPath: "http://localhost:3000/",
+    path: path.join(__dirname, "/dist"),
+    publicPath: "/",
+    clean: true,
+    filename: "bundle.js",
   },
 
   resolve: {
@@ -15,7 +23,6 @@ const commonConfig = {
 
   devServer: {
     port: 3000,
-    historyApiFallback: true,
   },
 
   module: {
@@ -68,8 +75,16 @@ const commonConfig = {
 const developmentConfig = {
   mode: "development",
   devServer: {
+    allowedHosts: ["all"],
     port: 3000,
     historyApiFallback: true,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+      "Access-Control-Allow-Headers":
+        "X-Requested-With, content-type, Authorization",
+    },
+    webSocketServer: false,
   },
   devtool: "inline-source-map",
 };
