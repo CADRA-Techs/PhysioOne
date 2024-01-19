@@ -17,7 +17,7 @@ function Navigation() {
             />
           ) : null;
         })}
-        <Route path="*" element={<div>404 Page Not Found</div>} />
+        <Route path="*" element={<div className="footer-quick-links">404 Page Not Found</div>} />
       </Routes>
       <button
         onClick={() => {
