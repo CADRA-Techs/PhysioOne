@@ -45,6 +45,10 @@ const commonConfig = {
           loader: "babel-loader",
         },
       },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg)$/i,
+        type: "asset/resource",
+      },
     ],
   },
 
