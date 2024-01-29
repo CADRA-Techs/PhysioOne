@@ -3,7 +3,6 @@ import "./index.css";
 import AppRoutes from "./AppRoutes";
 import Navigation from "./navigation";
 import { BrowserRouter } from "react-router-dom";
-
 import ReactDOM from "react-dom";
 
 const App = () => (
