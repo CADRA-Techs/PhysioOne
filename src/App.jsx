@@ -7,7 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 import ReactDOM from "react-dom";
 
 const App = () => (
-  <div className="container">
+  <div className="">
     <BrowserRouter basename={AppRoutes.pathAppBase}>
       <Navigation />
     </BrowserRouter>
