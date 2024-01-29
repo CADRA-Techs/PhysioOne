@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import AppRoutes from "./AppRoutes";
-import Navbar from "./pages/home/navbar";
+import Navbar from './pages/home/navbar'
 
 function Navigation() {
   const navigate = useNavigate();
