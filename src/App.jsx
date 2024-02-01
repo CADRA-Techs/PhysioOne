@@ -5,11 +5,12 @@ import Navigation from "./navigation";
 import { BrowserRouter } from "react-router-dom";
 import ReactDOM from "react-dom";
 import Navbar from "./pages/home/navbar";
-
+import Contact from "./pages/home/contact/contact";
 const App = () => (
   <div className="">
     <BrowserRouter basename={AppRoutes.pathAppBase}>
-      <Navbar/>
+      <Navbar/><br/><br/><br/><br/><br/>
+      <Navigation/>
     </BrowserRouter>
   </div>
 );
