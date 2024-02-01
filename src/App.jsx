@@ -9,7 +9,8 @@ import Navbar from "./pages/home/navbar";
 const App = () => (
   <div className="">
     <BrowserRouter basename={AppRoutes.pathAppBase}>
-      <Navbar/>
+      <Navbar/><br/><br/><br/><br/><br/>
+      <Navigation/>
     </BrowserRouter>
   </div>
 );
