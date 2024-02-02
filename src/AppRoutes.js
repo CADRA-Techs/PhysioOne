@@ -1,6 +1,6 @@
 import React from "react";
 
-const pathAppBase = "";
+const pathAppBase = "/";
 // const pathPageLogin = "/login";
 
 const pathHome = `/home`;
