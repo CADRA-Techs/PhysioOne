@@ -3,17 +3,72 @@ import React from "react";
 function Services() {
   const serviceCardDetails = [
     {
-      header: "Gynecological",
+      header: "Orthopaedic rehabilitation ",
       description:
         " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
     },
     {
-      header: "Abinesh",
+      header: "Neurological rehabilitation",
       description:
         " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
     },
     {
-      header: "Nikin",
+      header: "Musculoskeletal injury rehabilitation ",
+      description:
+        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+    },
+    {
+      header: "Paediatric rehabilitation ",
+      description:
+        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+    },
+    {
+      header: "Geriatric rehabilitation ",
+      description:
+        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+    },
+    {
+      header: "Obstetric and gynaecology ",
+      description:
+        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+    },
+    {
+      header: "Cardio thoracic rehabilitation",
+      description:
+        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+    },
+    {
+      header: "Sports injury rehabilitation",
+      description:
+        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+    },
+    {
+      header: "Corporate wellness",
+      description:
+        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+    },
+    {
+      header: "Bobath",
+      description:
+        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+    },
+    {
+      header: "PNF",
+      description:
+        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+    },
+    {
+      header: "Posture Correction",
+      description:
+        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+    },
+    {
+      header: "Ergonomic Correction",
+      description:
+        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+    },
+    {
+      header: "Resisted Exercises",
       description:
         " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
     },
