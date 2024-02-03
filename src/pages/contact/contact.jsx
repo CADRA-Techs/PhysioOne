@@ -44,7 +44,7 @@ export default function Contact()
           <input type='text' placeholder='NAME' className="name"/>
           <input type='email' placeholder='EMAIL' className="e-mail" />
           <input type='text' placeholder='SUBJECT' className="subject" />
-          <input type='tel' placeholder='PHONE NUMBER' className="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+          <input type='tel' placeholder='PHONE NUMBER' className="phone" pattern="^[0-9]{10}$" required />
           <input type='text' placeholder='Write something'  className="your-message" />
           <button className="rectangle" style={{color:'white'}} > SUBMIT </button>
         </form>
