@@ -17,7 +17,7 @@ export default function Navbar() {
       <div className="container custom-container">
         <nav className="navbar navbar-expand-lg header-nav">
           <div className="navbar-header">
-            <a id="mobile_btn" href="javascript:void(0);">
+            <a id="mobile_btn" href="">
               <span className="bar-icon">
                 <span></span>
                 <span></span>
@@ -33,11 +33,7 @@ export default function Navbar() {
               <Link to="index.html" className="menu-logo">
                 {/* <img src= className="img-fluid" alt="Logo"/> */}
               </Link>
-              <a
-                id="menu_close"
-                className="menu-close"
-                href="javascript:void(0);"
-              >
+              <a id="menu_close" className="menu-close" href="">
                 <i className="fas fa-times"></i>
               </a>
             </div>
