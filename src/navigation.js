@@ -4,7 +4,7 @@ import AppRoutes from "./AppRoutes";
 import Home from "./pages/home/home";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import Error404 from "./pages/Error404/Error404";
+import Error404 from "./pages/error404/Error404";
 
 function Navigation() {
   return (
