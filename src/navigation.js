@@ -4,6 +4,8 @@ import AppRoutes from "./AppRoutes";
 import Home from "./pages/home/home";
 import Navbar from "./components/Navbar/navbar";
 import Footer from "./components/Footer/Footer";
+import About from "./pages/about/about";
+import Services from "./pages/services/services";
 
 function Navigation() {
   const navigate = useNavigate();
@@ -23,6 +25,9 @@ function Navigation() {
         })}
         <Route path="*" element={<div>404 Page Not Found</div>} />
         <Route path="/" element={<Home />} />
+        <Route path='/' element={<Home/>}/>
+        <Route path="/about" element = {<About/>} />
+        <Route path="/services" element = {<Services/>}/>
       </Routes>
       <Footer />
     </Suspense>
