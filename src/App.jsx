@@ -10,10 +10,9 @@ import Contact from "./pages/contact/contact";
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 root.render(
-  <div className="">
+  <div>
     <BrowserRouter basename={AppRoutes.pathAppBase}>
-      <Navbar/><br/><br/><br/><br/><br/>
-      <Navigation/>
+      <Navigation />
     </BrowserRouter>
   </div>
 );
