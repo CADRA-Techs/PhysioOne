@@ -23,7 +23,6 @@ function Navigation() {
         })}
         <Route path="*" element={<div>404 Page Not Found</div>} />
         <Route path="/" element={<Home />} />
-        <Route path="/" element={<Home />} />
       </Routes>
       <Footer />
     </Suspense>

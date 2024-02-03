@@ -1,5 +1,4 @@
 import React from "react";
-import Services1 from "./Services1";
 
 function Services() {
   const serviceCardDetails = [
@@ -56,8 +55,6 @@ function Services() {
           </div>
         </div>
       </section>
-
-      <Services1 />
     </>
   );
 }

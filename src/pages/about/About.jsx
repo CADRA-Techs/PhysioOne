@@ -1,8 +1,8 @@
 import React from "react";
-import img1 from './assets/img/about-img1.jpg'
-import img2 from './assets/Img/about-img2.jpg';
-import img3 from './assets/Img/about-img3.jpg';
-import img4 from './assets/Img/phone-icon.svg';
+import img1 from "./assets/img/about-img1.jpg";
+import img2 from "./assets/Img/about-img2.jpg";
+import img3 from "./assets/Img/about-img3.jpg";
+import img4 from "./assets/Img/phone-icon.svg";
 
 function About() {
   return (
@@ -16,15 +16,10 @@ function About() {
                   <div className="col-md-6">
                     <div className="about-inner-img">
                       <div className="about-img">
-                      <img src={img1}  alt="About Image 1" />
-
+                        <img src={img1} alt="About Image 1" />
                       </div>
                       <div className="about-img">
-                        <img
-                          src={img2}
-                          
-                          alt
-                        />
+                        <img src={img2} alt />
                       </div>
                     </div>
                   </div>
@@ -34,11 +29,7 @@ function About() {
                         <h4>Over 25+ Years Experience</h4>
                       </div>
                       <div className="about-img">
-                        <img
-                          src={img3}
-                          className="img-fluid"
-                          alt
-                        />
+                        <img src={img3} className="img-fluid" alt />
                       </div>
                     </div>
                   </div>
