@@ -2,13 +2,15 @@ import React, { Suspense } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import AppRoutes from "./AppRoutes";
 import Home from "./pages/home/home";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 import Contact from "./pages/contact/contact";
 
 function Navigation() {
   const navigate = useNavigate();
   return (
     <Suspense fallback={<div></div>}>
-      <Navbar />
+      <Navbar/>
       <Routes>
         {AppRoutes.routes.map((route, idx) => {
           return route.element ? (
