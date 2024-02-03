@@ -4,11 +4,17 @@ import AppRoutes from "./AppRoutes";
 import Home from "./pages/home/home";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import Error404 from "./pages/Error404/Error404";
 
 function Navigation() {
-  const navigate = useNavigate();
   return (
-    <Suspense fallback={<div></div>}>
+    <Suspense
+      fallback={
+        <div class="preloader">
+          <div class="spinner"></div>
+        </div>
+      }
+    >
       <Navbar />
       <Routes>
         {AppRoutes.routes.map((route, idx) => {
@@ -21,7 +27,7 @@ function Navigation() {
             />
           ) : null;
         })}
-        <Route path="*" element={<div>404 Page Not Found</div>} />
+        <Route path="*" element={<Error404 />} />
         <Route path="/" element={<Home />} />
       </Routes>
       <Footer />
