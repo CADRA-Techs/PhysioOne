@@ -16,14 +16,20 @@ const routeTeamOfDocs = {
   path: pathTeamOfDocs,
   element: teamOfDocs,
 };
-
-const routes = [routeUserManagement, routeTeamOfDocs];
+const pathBlog = "/blog";
+const blog = React.lazy(() => import("./pages/blog/Blog"));
+const routeBlog = {
+  path: pathBlog,
+  element: blog,
+};
+const routes = [routeUserManagement, routeTeamOfDocs, routeBlog];
 
 const AppRoutes = Object.freeze({
   routes,
   pathAppBase,
   pathHome,
   pathTeamOfDocs,
+  pathBlog
 });
 
 export default AppRoutes;
