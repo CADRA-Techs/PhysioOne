@@ -5,8 +5,7 @@
   width: 1002px;
 }
 
-.component .your-message
- {
+.component .your-message {
   background-color: #d9d9d9;
   border-radius: 5px;
   height: 100px;
@@ -14,7 +13,18 @@
   position: absolute;
   top: 217px;
   width: 1002px;
+  text-align: start;
 }
+
+.component .your-message::placeholder {
+  position: absolute;
+  top: 5px; /* Adjust this value to move the placeholder higher */
+  left: 10px; /* Adjust this value to move the placeholder to the left */
+  color: #000000; /* Set the placeholder text color */
+  pointer-events: none;
+}
+
+
 
 .component .your-message:hover {
   transition: all 0.5s ease-in-out;

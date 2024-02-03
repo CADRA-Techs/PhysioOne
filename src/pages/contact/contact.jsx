@@ -1,19 +1,52 @@
+import React, { useState } from 'react';
 import './style.css';
+
 export default function Contact()
 {
+  function YourFormComponent() {
+    const [formData, setFormData] = useState({
+      name: '',
+      email: '',
+      subject: '',
+      phone: '',
+      message: ''
+    });
+  };
+
+    const handleChange = (e) => {
+      const { name, value } = e.target;
+      setFormData({
+        ...formData,
+        [name]: value
+      });
+    };
+
+    const handleSubmit = (e) => {
+      e.preventDefault();
+      // Add your form submission logic here using the formData state
+      console.log('Form submitted:', formData);
+      // Reset form data if needed
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        phone: '',
+        message: ''
+      });
+    };
     return(<div><center>
         <section>
           <span className='txt1'>Contact us</span>
           <h2>Drop Us Message For Any Query</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </section>
-        <form className="component">
+        <form className="component" onSubmit={handleSubmit}>
           <input type='text' placeholder='NAME' className="name"/>
           <input type='email' placeholder='EMAIL' className="e-mail" />
           <input type='text' placeholder='SUBJECT' className="subject" />
           <input type='tel' placeholder='PHONE NUMBER' className="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
           <input type='text' placeholder='Write something'  className="your-message" />
-          <button className="rectangle" > SUBMIT </button>
+          <button className="rectangle" style={{color:'white'}} > SUBMIT </button>
         </form>
       </center>
       <br/>
