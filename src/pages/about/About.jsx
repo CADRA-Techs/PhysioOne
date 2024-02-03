@@ -84,9 +84,9 @@ function About() {
         </div>
       </section>
       <Banners />
-      <section class="partner-area pt-100 pb-70">
-        <div class="container">
-          <div class="section-title">
+      <section className="partner-area pt-100 pb-70">
+        <div className="container">
+          <div className="section-title">
             <span>Partners</span>
             <h2>Featured Customer & Partners</h2>
             <p>
@@ -96,36 +96,36 @@ function About() {
             </p>
           </div>
 
-          <div class="partner-list">
-            <div class="partner-item">
+          <div className="partner-list">
+            <div className="partner-item">
               <img src={partner1} alt="image" />
             </div>
 
-            <div class="partner-item">
+            <div className="partner-item">
               <img src={partner2} alt="image" />
             </div>
 
-            <div class="partner-item">
+            <div className="partner-item">
               <img src={partner3} alt="image" />
             </div>
 
-            <div class="partner-item">
+            <div className="partner-item">
               <img src={partner4} alt="image" />
             </div>
 
-            <div class="partner-item">
+            <div className="partner-item">
               <img src={partner5} alt="image" />
             </div>
 
-            <div class="partner-item">
+            <div className="partner-item">
               <img src={partner5} alt="image" />
             </div>
 
-            <div class="partner-item">
+            <div className="partner-item">
               <img src={partner6} alt="image" />
             </div>
 
-            <div class="partner-item">
+            <div className="partner-item">
               <img src={partner7} alt="image" />
             </div>
           </div>
