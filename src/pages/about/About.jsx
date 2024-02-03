@@ -1,8 +1,8 @@
 import React from "react";
 import img1 from "./assets/img/about-img1.jpg";
-import img2 from "./assets/Img/about-img2.jpg";
-import img3 from "./assets/Img/about-img3.jpg";
-import img4 from "./assets/Img/phone-icon.svg";
+import img2 from "./assets/img/about-img2.jpg";
+import img3 from "./assets/img/about-img3.jpg";
+import img4 from "./assets/img/phone-icon.svg";
 
 function About() {
   return (
