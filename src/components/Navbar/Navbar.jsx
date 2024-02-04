@@ -41,9 +41,8 @@ export default function Navbar() {
               <CustomLink to="/">Home </CustomLink>
               <CustomLink to="/doctors">Doctors </CustomLink>
               <CustomLink to="/services">Services </CustomLink>
-              <CustomLink to="/testimonials">Testimonials</CustomLink>
               <CustomLink to="/about">About us </CustomLink>
-              <CustomLink to="/blog">Blog </CustomLink>
+              {/* <CustomLink to="/blog">Blog </CustomLink> */}
               <CustomLink to="/contact">Contact </CustomLink>
             </ul>
           </div>

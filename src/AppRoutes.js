@@ -23,6 +23,7 @@ const routeAbout = {
   path: pathAbout,
   element: about,
 };
+
 const pathServices = "/services";
 const services = React.lazy(() => import("./pages/services/Services"));
 const routeServices = {
@@ -42,6 +43,8 @@ const AppRoutes = Object.freeze({
   pathAppBase,
   pathHome,
   pathTeamOfDocs,
+  pathAbout,
+  pathServices,
 });
 
 export default AppRoutes;

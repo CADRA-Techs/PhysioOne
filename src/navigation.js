@@ -10,8 +10,8 @@ function Navigation() {
   return (
     <Suspense
       fallback={
-        <div class="preloader">
-          <div class="spinner"></div>
+        <div className="preloader">
+          <div className="spinner"></div>
         </div>
       }
     >

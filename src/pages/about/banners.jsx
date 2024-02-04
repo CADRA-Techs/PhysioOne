@@ -6,7 +6,6 @@ import choose4 from "./assets/img/banners/choose-04.svg";
 import shape1 from "./assets/img/banners/shape-06.png";
 import shape2 from "./assets/img/banners/shape-07.png";
 import way from "./assets/img/banners/way-img.png";
-import Testimonals from "./testimonals";
 
 function Banners() {
   return (
@@ -26,7 +25,7 @@ function Banners() {
                 <div className="card-body">
                   <div className="why-choose-icon">
                     <span>
-                      <img src={choose1} alt />
+                      <img src={choose1} alt="Why Choose Icon" />
                     </span>
                   </div>
                   <div className="why-choose-content">
@@ -45,7 +44,7 @@ function Banners() {
                 <div className="card-body">
                   <div className="why-choose-icon">
                     <span>
-                      <img src={choose2} alt />
+                      <img src={choose2} alt="Why Choose Icon" />
                     </span>
                   </div>
                   <div className="why-choose-content">
@@ -64,7 +63,7 @@ function Banners() {
                 <div className="card-body">
                   <div className="why-choose-icon">
                     <span>
-                      <img src={choose3} alt />
+                      <img src={choose3} alt="Why Choose Icon" />
                     </span>
                   </div>
                   <div className="why-choose-content">
@@ -83,7 +82,7 @@ function Banners() {
                 <div className="card-body">
                   <div className="why-choose-icon">
                     <span>
-                      <img src={choose4} alt />
+                      <img src={choose4} alt="Why Choose Icon" />
                     </span>
                   </div>
                   <div className="why-choose-content">
@@ -105,10 +104,10 @@ function Banners() {
           <div className="way-bg">
             <div className="way-shapes-img">
               <div className="way-shapes-left">
-                <img src={shape1} alt />
+                <img src={shape1} alt="Why Choose Icon" />
               </div>
               <div className="way-shapes-right">
-                <img src={shape2} alt />
+                <img src={shape2} alt="Why Choose Icon" />
               </div>
             </div>
             <div className="row align-items-end">
@@ -127,14 +126,13 @@ function Banners() {
               </div>
               <div className="col-lg-5 col-md-12">
                 <div className="way-img">
-                  <img src={way} className="img-fluid" alt />
+                  <img src={way} className="img-fluid" alt="Why Choose Icon" />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <Testimonals />
     </>
   );
 }

@@ -1,6 +1,15 @@
 import React from "react";
+import img1 from "./assets/img/consult.jpg";
+import BreadCrumb from "../../components/Breadcrumb/BreadCrumb";
 
 function Services() {
+  const pageDetails = {
+    title: "Services we Provide",
+    subTitle: "Services",
+    previousTitle: "Home",
+    previousUrl: "/home",
+  };
+
   const serviceCardDetails = [
     {
       header: "Orthopaedic rehabilitation ",
@@ -89,6 +98,7 @@ function Services() {
   };
   return (
     <>
+      <BreadCrumb page={pageDetails} />
       <section className="services-section bg-f4f6fe pt-100 pb-100">
         <div className="container-fluid">
           <div className="section-title">

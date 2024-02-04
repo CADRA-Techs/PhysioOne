@@ -7,7 +7,8 @@ import Footer from "../../components/Footer/Footer";
 
 function TeamOfDocs() {
   const pageDetails = {
-    title: "Our Team",
+    title: "Our Team of Doctors",
+    subTitle: "Our Team",
     previousTitle: "Home",
     previousUrl: "/home",
   };
