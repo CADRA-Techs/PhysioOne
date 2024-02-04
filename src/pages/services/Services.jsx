@@ -1,6 +1,15 @@
 import React from "react";
+import img1 from "./assets/img/consult.jpg";
+import BreadCrumb from "../../components/Breadcrumb/BreadCrumb";
 
 function Services() {
+  const pageDetails = {
+    title: "Services we Provide",
+    subTitle: "Services",
+    previousTitle: "Home",
+    previousUrl: "/home",
+  };
+
   const serviceCardDetails = [
     {
       header: "Orthopaedic rehabilitation ",
@@ -75,10 +84,10 @@ function Services() {
   ];
   const renderServiceCards = (header, description) => {
     return (
-      <div class="col-lg-4 col-md-6">
-        <div class="services-item-two">
-          <div class="icon">
-            <i class="flaticon-pregnancy"></i>
+      <div className="col-lg-4 col-md-6">
+        <div className="services-item-two">
+          <div className="icon">
+            <i className="flaticon-pregnancy"></i>
           </div>
 
           <h3>{header}</h3>
@@ -89,6 +98,7 @@ function Services() {
   };
   return (
     <>
+      <BreadCrumb page={pageDetails} />
       <section className="services-section bg-f4f6fe pt-100 pb-100">
         <div className="container-fluid">
           <div className="section-title">
@@ -107,6 +117,43 @@ function Services() {
                 {renderServiceCards(details.header, details.description)}
               </React.Fragment>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="step-three ptb-100">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-6">
+              <div className="step-three-image">
+                <img src={img1} alt="image" />
+              </div>
+            </div>
+
+            <div className="col-lg-6">
+              <div className="step-three-content">
+                <span>Step 3</span>
+                <h3>Pick Up Your Prescription from Your Local Doctor.</h3>
+                <p>
+                  Many healthcare systems around the world together with
+                  government agencies and startup companies are building and
+                  delivering Telehealth
+                </p>
+                <b>
+                  We can send your prescription directly to your local pharmacy
+                  for easy pick-up. Many healthcare systems around the world
+                  together with government agencies and startup companies are
+                  building and delivering Telehealth
+                </b>
+
+                <div className="step-btn">
+                  <a href="services.html#" className="default-btn">
+                    Make Appointment
+                    <span></span>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -12,7 +12,7 @@ function BreadCrumb({ page }) {
                 <li>
                   <a href={page.previousUrl}>{page.previousTitle}</a>
                 </li>
-                <li>{page.title}</li>
+                <li>{page.subTitle}</li>
               </ul>
             </div>
           </div>
