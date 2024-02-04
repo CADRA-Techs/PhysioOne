@@ -7,27 +7,27 @@ import Footer from "../../components/Footer/Footer";
 
 function TeamOfDocs() {
   const pageDetails = {
-    title: "Out Team",
+    title: "Our Team",
     previousTitle: "Home",
     previousUrl: "/home",
   };
   const docDetails = [
     {
       profileImage: Image1,
-      fullName: "Dr. Meenu",
-      desig: "Ripper",
+      fullName: "Dr. Sample Text",
+      desig: "Sample Text",
       embedSocial: false,
     },
     {
       profileImage: Image2,
-      fullName: "Dr. Selva Vignesh",
-      desig: "Ripper",
+      fullName: "Dr. Sample Text",
+      desig: "Sample Text",
       embedSocial: false,
     },
     {
       profileImage: Image3,
-      fullName: "Dr. Vaishu",
-      desig: "Ripper",
+      fullName: "Dr. Sample Text",
+      desig: "Sample Text",
       embedSocial: true,
       facebookUrl: "www.facebook.com",
       instagramUrl: "www.instagram.com",
