@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import AppRoutes from "./AppRoutes";
 import Home from "./pages/home/home";
-import Navbar from "./components/Navbar/navbar";
+import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
 function Navigation() {
