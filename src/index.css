@@ -1,3 +1,22 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+.slick-next {
+  right: -40px;
+}
+.slick-next:hover {
+  background-color: #207ef7;
+}
+.slick-next::before {
+  color: #207ef7;
+}
+
+.slick-prev {
+  left: -40px;
+}
+.slick-prev::before {
+  color: #207ef7;
+}
+.slick-prev:hover {
+  background-color: #207ef7;
+}
