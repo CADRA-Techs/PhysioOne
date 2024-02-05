@@ -9,6 +9,7 @@ import featureService1 from './assets/img/feature-service-1.jpg';
 import featureService2 from './assets/img/feature-service-2.jpg';
 import featureService3 from './assets/img/feature-service-3.jpg';
 
+
 function Home() {
   return (
     <>
@@ -133,8 +134,9 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="owl-carousel features-slider-sixteen owl-theme">
-                    <div className="feature-sixteen-main">
+                
+                <div className="row">
+                    <div className="feature-sixteen-main col">
                         <div className="feature-six-img">
                             <img src={featureService1} alt="image" className="img-fluid" />
                             <div className="feature-content-six">
@@ -152,7 +154,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="feature-sixteen-main">
+                    <div className="feature-sixteen-main col">
                         <div className="feature-six-img">
                             <img src={featureService2} alt="image" className="img-fluid" />
                             <div className="feature-content-six">
@@ -170,7 +172,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="feature-sixteen-main">
+                    <div className="feature-sixteen-main col">
                         <div className="feature-six-img">
                             <img src={featureService3} alt="image" className="img-fluid" />
                             <div className="feature-content-six">
@@ -188,6 +190,8 @@ function Home() {
                             </div>
                         </div>
                     </div>
+
+                    
                     {/* Add more similar elements for other features */}
                 </div>
             </div>
