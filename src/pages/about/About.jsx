@@ -10,7 +10,7 @@ import partner4 from "../about/assets/img/partners/4.jpg";
 import partner5 from "../about/assets/img/partners/5.jpg";
 import partner6 from "../about/assets/img/partners/6.jpg";
 import partner7 from "../about/assets/img/partners/7.jpg";
-import Banners from "./Banners";
+import Banners from "./banners";
 import FullScreenTestimonals from "../../components/FullScreenTestimonals/FullScreenTestimonals";
 import BreadCrumb from "../../components/Breadcrumb/BreadCrumb";
 
