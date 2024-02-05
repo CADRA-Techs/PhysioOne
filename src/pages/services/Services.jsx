@@ -1,6 +1,8 @@
 import React from "react";
 import img1 from "./assets/img/consult.jpg";
+import OwlCarousel from "react-owl-carousel";
 import BreadCrumb from "../../components/Breadcrumb/BreadCrumb";
+import Slider from "react-slick";
 
 function Services() {
   const pageDetails = {
@@ -84,14 +86,17 @@ function Services() {
   ];
   const renderServiceCards = (header, description) => {
     return (
-      <div className="col-lg-4 col-md-6">
+      <div style={{ padding: "0 15px" }}>
         <div className="services-item-two">
           <div className="icon">
-            <i className="flaticon-pregnancy"></i>
+            <i className="flaticon-shield"></i>
           </div>
-
-          <h3>{header}</h3>
-          <p>{description}</p>
+          <div style={{ minHeight: "60px" }}>
+            <h3>{header}</h3>
+          </div>
+          <div style={{ minHeight: "90px" }}>
+            <p>{description}</p>
+          </div>
         </div>
       </div>
     );
@@ -100,7 +105,7 @@ function Services() {
     <>
       <BreadCrumb page={pageDetails} />
       <section className="services-section bg-f4f6fe pt-100 pb-100">
-        <div className="container-fluid">
+        <div className="container-fluid" style={{ padding: "0 40px" }}>
           <div className="section-title">
             <span>Our Services</span>
             <h2>Our Healthcare Services</h2>
@@ -111,12 +116,41 @@ function Services() {
             </p>
           </div>
 
-          <div className="row">
-            {serviceCardDetails.map((details, idx) => (
-              <React.Fragment key={idx}>
-                {renderServiceCards(details.header, details.description)}
-              </React.Fragment>
-            ))}
+          <div className="slider-container">
+            <Slider
+              className="testimonials-slider"
+              infinite={true}
+              autoplay={true}
+              slidesToScroll={1}
+              slidesToShow={3}
+              rows={2}
+              responsive={[
+                {
+                  breakpoint: 1900,
+                  settings: {
+                    slidesToShow: 3,
+                  },
+                },
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 2,
+                  },
+                },
+                {
+                  breakpoint: 700,
+                  settings: {
+                    slidesToShow: 1,
+                  },
+                },
+              ]}
+            >
+              {serviceCardDetails.map((details, idx) => (
+                <React.Fragment key={idx}>
+                  {renderServiceCards(details.header, details.description)}
+                </React.Fragment>
+              ))}
+            </Slider>
           </div>
         </div>
       </section>
