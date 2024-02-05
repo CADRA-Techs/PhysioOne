@@ -66,6 +66,8 @@ function FullScreenTestimonals() {
               <OwlCarousel
                 className="testimonials-slider owl-carousel owl-theme"
                 loop
+                autoplay
+                autoplayTimeout={3500}
                 dots
                 items={1}
               >
