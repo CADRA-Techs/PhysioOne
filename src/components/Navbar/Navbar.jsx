@@ -1,54 +1,83 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
-import "./assets/Navbar.css";
+import "./assets/css/Navbar.css";
+import "./assets/css/Sidebar.css";
+import AppRoutes from "../../AppRoutes";
+import React, { useState } from "react";
+import closeIcon from "./assets/img/close.png";
+import barIcon from "./assets/img/menu.png";
 
 export default function Navbar() {
-  const CustomLink = ({ to, children }) => {
+  const [isopen, setisopen] = useState(false);
+  const toggle = () => {
+    setisopen(!isopen);
+  };
+
+  const CustomLink = ({ to, children, styleName }) => {
     const resolve = useResolvedPath(to);
     const isUrlMatch = useMatch({ path: resolve.pathname, end: true });
     return (
-      <li className={isUrlMatch ? "has-submenu active" : "has-submenu"}>
-        <Link to={to}>{children}</Link>
-      </li>
+      <Link className={isUrlMatch ? `${styleName}-active` : styleName} to={to}>
+        {children}
+      </Link>
+    );
+  };
+
+  const CustomNavbar = ({ toggle }) => {
+    return (
+      <nav>
+        <Link to="/" className="link">
+          PhysioOne
+        </Link>
+        <div className="menu-items">
+          {AppRoutes.routes.map((route, index) => (
+            <CustomLink key={index} to={route.path} styleName="link">
+              {route.name}
+            </CustomLink>
+          ))}
+        </div>
+        <div className="icons">
+          <div className="mobile-menu-icon">
+            <img src={barIcon} onClick={toggle}></img>
+          </div>
+        </div>
+      </nav>
+    );
+  };
+
+  const CustomSidebar = ({ isopen, toggle }) => {
+    let opacityClasses = ["sidebar-container"];
+    if (isopen) {
+      opacityClasses.push("opacity-on");
+    } else {
+      opacityClasses.push("opacity-off");
+    }
+
+    return (
+      <div
+        className={opacityClasses.join(" ")}
+        isopen={isopen.toString()}
+        onClick={toggle}
+      >
+        <div className="sidebar-icon">
+          <img onClick={toggle} src={closeIcon}></img>
+        </div>
+        <div className="sidebar-wrapper">
+          <div className="sidebar-menu">
+            {AppRoutes.routes.map((route, index) => (
+              <CustomLink key={index} to={route.path} styleName="sidebar-links">
+                {route.name}
+              </CustomLink>
+            ))}
+          </div>
+        </div>
+      </div>
     );
   };
 
   return (
-    <header className="header header-fixed header-one">
-      <div className="container custom-container">
-        <nav className="navbar navbar-expand-lg header-nav">
-          <div className="navbar-header">
-            <a id="mobile_btn" href="">
-              <span className="bar-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-            </a>
-            <Link to="index.html" className="navbar-brand logo">
-              {/* <img src= className="img-fluid" alt="Logo"/> */}
-            </Link>
-          </div>
-          <div className="main-menu-wrapper">
-            <div className="menu-header">
-              <Link to="index.html" className="menu-logo">
-                {/* <img src= className="img-fluid" alt="Logo"/> */}
-              </Link>
-              <a id="menu_close" className="menu-close" href="">
-                <i className="fas fa-times"></i>
-              </a>
-            </div>
-            <ul className="main-nav">
-              <CustomLink to="/">Home </CustomLink>
-              <CustomLink to="/doctors">Doctors </CustomLink>
-              <CustomLink to="/services">Services </CustomLink>
-              <CustomLink to="/testimonials">Testimonials</CustomLink>
-              <CustomLink to="/about">About us </CustomLink>
-              <CustomLink to="/blog">Blog </CustomLink>
-              <CustomLink to="/contact">Contact </CustomLink>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
+    <>
+      <CustomNavbar toggle={toggle} />
+      <CustomSidebar isopen={isopen} toggle={toggle} />
+    </>
   );
 }
