@@ -132,7 +132,7 @@ function Footer() {
                 <h3>Phone</h3>
                 <span>
                   <a href={`tel:${footerConfig.phone.value}`}>
-                    {footerConfig.phone.value}
+                    {footerConfig.phone.label}
                   </a>
                 </span>
               </div>

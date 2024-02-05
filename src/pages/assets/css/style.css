@@ -154,7 +154,7 @@ h5,
 h6 {
   color: #0f123b;
   text-transform: capitalize;
-  font-family: Rubik, sans-serif;
+  font-family: Poppins, sans-serif;
   font-weight: 700;
 }
 .default-btn,
@@ -4868,7 +4868,7 @@ h6 {
   color: #fff;
   font-weight: 400;
   font-size: 30px;
-  font-family: Rubik, sans-serif;
+  font-family: Poppins, sans-serif;
 }
 .sign-in-form,
 .signup-form {
