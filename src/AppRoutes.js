@@ -17,20 +17,25 @@ const routeTeamOfDocs = {
   element: teamOfDocs,
 };
 
-const pathAbout = '/about';
-const about = React.lazy(() => import ("./pages/about/about"));
-const routeAbout ={
-  path:pathAbout,
-  element:about
+const pathAbout = "/about";
+const about = React.lazy(() => import("./pages/about/About"));
+const routeAbout = {
+  path: pathAbout,
+  element: about,
 };
-const pathServices ='/services';
-const services = React.lazy(() => import ("./pages/services/services"));
+const pathServices = "/services";
+const services = React.lazy(() => import("./pages/services/Services"));
 const routeServices = {
-  path:pathServices,
-  element:services
-}
+  path: pathServices,
+  element: services,
+};
 
-const routes = [routeUserManagement, routeTeamOfDocs,routeAbout,routeServices];
+const routes = [
+  routeUserManagement,
+  routeTeamOfDocs,
+  routeAbout,
+  routeServices,
+];
 
 const AppRoutes = Object.freeze({
   routes,
