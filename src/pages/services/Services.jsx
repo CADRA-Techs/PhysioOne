@@ -16,72 +16,72 @@ function Services() {
     {
       header: "Orthopaedic rehabilitation ",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        "  Restoring movement and function after bone or joint injuries.",
     },
     {
       header: "Neurological rehabilitation",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        " Regaining independence and mobility following neurological conditions.",
     },
     {
       header: "Musculoskeletal injury rehabilitation ",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        " Healing and strengthening muscles, bones, and joints",
     },
     {
       header: "Paediatric rehabilitation ",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        " Supporting children in reaching their developmental milestones.",
     },
     {
       header: "Geriatric rehabilitation ",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        " Enhancing mobility and quality of life for seniors.",
     },
     {
       header: "Obstetric and gynaecology ",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        " Tailored care for women's health needs during and after pregnancy.",
     },
     {
       header: "Cardio thoracic rehabilitation",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        "  Rehabilitating heart and lung function for improved cardiovascular health.",
     },
     {
       header: "Sports injury rehabilitation",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        " Getting athletes back to peak performance safely.",
     },
     {
       header: "Corporate wellness",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        " Promoting employee health and productivity through tailored programs.",
     },
     {
       header: "Bobath",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        " Specialized therapy for individuals with neurological conditions like cerebral palsy.",
     },
     {
-      header: "PNF",
+      header: "PNF(Proprioceptive Neuromuscular Facilitation)",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        " Utilizing patterns of movement to improve flexibility and strength.",
     },
     {
       header: "Posture Correction",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        " Correcting alignment to prevent pain and improve posture-related issues.",
     },
     {
       header: "Ergonomic Correction",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        "Enhancing workspace comfort and safety to prevent musculoskeletal issues.",
     },
     {
       header: "Resisted Exercises",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        " Strengthening muscles and improving endurance through resistance training.",
     },
   ];
   const renderServiceCards = (header, description) => {
