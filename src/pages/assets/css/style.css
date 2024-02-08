@@ -172,7 +172,7 @@ h6 {
   border: none;
   position: relative;
   display: inline-block;
-  background-color: #13577a;
+  background-color:#36C8AF;
   border-radius: 30px;
   opacity: 1;
   font-weight: 400;
@@ -213,7 +213,7 @@ h6 {
   position: absolute;
   display: inline-block;
   border-radius: 5px;
-  background-color: #13577a;
+  background-color: #36C8AF;
   opacity: 1;
 }
 .section-title {
@@ -222,7 +222,7 @@ h6 {
   margin: 0 auto 45px;
 }
 .section-title span {
-  color: #13577a;
+  color: #36C8AF;
   font-size: 18px;
 }
 .section-title h2 {
@@ -260,7 +260,7 @@ h6 {
   width: 60%;
   height: 100%;
   z-index: -1;
-  background: #13577a;
+  background: #36C8AF;
   transition: 0.9s;
 }
 .appointment-area,
@@ -406,7 +406,7 @@ h6 {
 .top-header .top-social li i:hover,
 .widget-area .widget-image .click-btn a:hover,
 .widget-area .widget_content .list li a:hover {
-  background-color: #13577a;
+  background-color: #36C8AF;
   color: #fff;
 }
 .top-header .top-social {
@@ -511,7 +511,7 @@ h6 {
 .main-navbar .navbar .navbar-nav .nav-item a.active,
 .main-navbar .navbar .navbar-nav .nav-item a:focus,
 .main-navbar .navbar .navbar-nav .nav-item a:hover {
-  color: #13577a;
+  color: #36C8AF;
   position: relative;
   transition: 0.5s;
 }
@@ -527,7 +527,7 @@ h6 {
 }
 .main-navbar .navbar .navbar-nav .nav-item.active a,
 .main-navbar .navbar .navbar-nav .nav-item:hover a {
-  color: #13577a;
+  color: #36C8AF;
   transition: 0.5s;
 }
 .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu {
@@ -563,7 +563,7 @@ h6 {
 .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li a:focus,
 .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li a:hover,
 .single-footer-widget .footer-quick-links li a:hover {
-  color: #13577a;
+  color: #36C8AF;
   letter-spacing: 1px;
 }
 .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li a i {
@@ -1000,7 +1000,7 @@ h6 {
 .main-navbar .navbar .navbar-nav .nav-item .dropdown-menu li.active a,
 .services-area.two .section-title span,
 .single-blog .content h3 a:hover {
-  color: #13577a;
+  color: #36C8AF;
 }
 .main-navbar
   .navbar
@@ -1175,11 +1175,11 @@ h6 {
 .single-shop .product-image .add-to-cart-btn li i:hover,
 .testimonials-slider .owl-dots .owl-dot.active span,
 .testimonials-slider .owl-dots .owl-dot:hover span {
-  background-color: #13577a;
+  background-color: #36C8AF;
 }
 .main-navbar .navbar .others-options .default-btn-two {
   border-radius: 10px;
-  background-color: #13577a;
+  background-color: #36C8AF;
   margin-left: 0;
 }
 .home-slides.owl-theme .owl-nav [class*="owl-"]:focus,
@@ -1244,7 +1244,7 @@ h6 {
     ul
     li
     a.active {
-    color: #13577a;
+    color: #36C8AF;
   }
   .main-navbar,
   .main-responsive-nav .main-responsive-menu.mean-container .mean-nav ul li a i,
@@ -1550,7 +1550,7 @@ h6 {
   width: 50px;
   height: 50px;
   line-height: 60px;
-  background-color: #13577a;
+  background-color: #36C8AF;
   border-radius: 50%;
   color: #fff;
   position: absolute;
@@ -1577,7 +1577,7 @@ h6 {
   bottom: 0;
   left: 0;
   border-radius: 50%;
-  border: 1px solid #13577a;
+  border: 1px solid #36C8AF;
   animation: 2s linear 1s infinite ripple;
 }
 .video-image .video-btn::before {
@@ -1590,7 +1590,7 @@ h6 {
   bottom: 0;
   left: 0;
   border-radius: 50%;
-  border: 1px solid #13577a;
+  border: 1px solid #36C8AF;
   animation: 2s linear infinite ripple;
 }
 .about-wrap .video-btn .video-content .video-btn:focus,
@@ -1609,7 +1609,7 @@ h6 {
 .video-image .video-btn .video-content .video-btn:focus,
 .video-image .video-btn:hover {
   background-color: #fff;
-  color: #13577a;
+  color: #36C8AF;
 }
 @keyframes ripple {
   0% {
@@ -1723,7 +1723,7 @@ h6 {
   height: 40px;
   width: 40px;
   line-height: 0;
-  background-color: #13577a;
+  background-color: #36C8AF;
   border-radius: 50px;
 }
 .image-sliders.owl-theme .owl-nav [class*="owl-"]:hover {
@@ -1765,7 +1765,7 @@ h6 {
   line-height: 47px;
   transition: 0.5s;
   background-color: #fff;
-  color: #13577a;
+  color: #36C8AF;
   border-radius: 50%;
   opacity: 1;
   visibility: hidden;
@@ -1859,8 +1859,8 @@ h6 {
   transform: translateY(-10px);
 }
 .top-services-content:hover .icon i {
-  background-color: #13577a;
-  border: 1px dashed #13577a;
+  background-color: #36C8AF;
+  border: 1px dashed #36C8AF;
   color: #fff;
 }
 .top-services-content.two {
@@ -1876,7 +1876,7 @@ h6 {
 .solutions-content span,
 .treatment-content span {
   font-size: 18px;
-  color: #13577a;
+  color: #36C8AF;
 }
 .about-content h3 {
   font-size: 32px;
@@ -1929,10 +1929,10 @@ h6 {
 }
 .about-content .about-features.two li span:hover {
   color: #0f123b;
-  background-color: #13577a;
+  background-color: #36C8AF;
 }
 .about-content .about-features.two li span i {
-  color: #13577a;
+  color: #36C8AF;
   font-weight: 500;
 }
 .about-wrap {
@@ -1952,7 +1952,7 @@ h6 {
   width: 80px;
   height: 80px;
   line-height: 90px;
-  background-color: #13577a;
+  background-color: #36C8AF;
   border-radius: 10px;
   color: #fff;
   position: absolute;
@@ -1986,7 +1986,7 @@ h6 {
   bottom: 0;
   left: 0;
   border-radius: 10px;
-  border: 1px solid #13577a;
+  border: 1px solid #36C8AF;
   animation: 2s linear 1s infinite ripple;
 }
 .about-wrap .video-btn::before,
@@ -2002,7 +2002,7 @@ h6 {
   bottom: 0;
   left: 0;
   border-radius: 10px;
-  border: 1px solid #13577a;
+  border: 1px solid #36C8AF;
   animation: 2s linear infinite ripple;
 }
 .services-area {
@@ -2074,7 +2074,7 @@ h6 {
   width: 80px;
   line-height: 90px;
   background-color: #e1e7fb;
-  border: 1px solid #13577a;
+  border: 1px solid #36C8AF;
   border-radius: 50px;
   transition: 0.5s;
   margin-bottom: 25px;
@@ -2090,7 +2090,7 @@ h6 {
   width: 60px;
   line-height: 60px;
   background-color: #eaf7fd;
-  color: #13577a;
+  color: #36C8AF;
   border-radius: 30px;
 }
 .services-item h3,
@@ -2113,7 +2113,7 @@ h6 {
 .services-item-two .read-btn,
 .single-services .read-btn {
   display: inline-block;
-  color: #13577a;
+  color: #36C8AF;
   font-weight: 500;
   transition: 0.5s;
   margin-top: 12px;
@@ -2147,7 +2147,7 @@ h6 {
   width: 100%;
   height: 0;
   border-radius: 10px;
-  background-color:#13577a;
+  background-color:#36C8AF;
   z-index: -1;
   transition: 0.5s;
 }
@@ -2167,7 +2167,7 @@ h6 {
   border-radius: 10px;
   z-index: 1;
   transition: 0.5s;
-  border: 1px solid #13577a;
+  border: 1px solid #36C8AF;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -2225,7 +2225,7 @@ h6 {
 .single-shop:hover .product-image .percentage,
 .team-item .image .social li a:hover {
   color: #fff;
-  background-color: #13577a;
+  background-color: #36C8AF;
 }
 .app-content .app-text h4 {
   font-size: 20px;
@@ -2292,7 +2292,7 @@ h6 {
   width: 100%;
   height: 0;
   border-radius: 5px;
-  background-color: #13577a;
+  background-color: #36C8AF;
   z-index: -1;
   transition: 0.5s;
 }
@@ -2341,7 +2341,7 @@ h6 {
 .doctor-item .content span {
   font-size: 15px;
   font-weight: 500;
-  color: #13577a;
+  color: #36C8AF;
 }
 .doctor-item .content .social {
   padding-left: 0;
@@ -2471,7 +2471,7 @@ h6 {
 }
 .team-item .content span {
   font-size: 16px;
-  color: #13577a;
+  color: #36C8AF;
 }
 .team-item .content.bg-ffffff {
   background-color: #fff;
@@ -2508,7 +2508,7 @@ h6 {
 }
 .single-fun-fact h3 {
   font-size: 36px;
-  color: #13577a;
+  color: #36C8AF;
   margin-bottom: 0;
   transition: 0.5s;
 }
@@ -2518,7 +2518,7 @@ h6 {
   top: 2px;
   left: -5px;
   transition: 0.5s;
-  color: #13577a;
+  color: #36C8AF;
 }
 .single-fun-fact p {
   color: #0f123b;
@@ -2595,7 +2595,7 @@ h6 {
 }
 .table-condensed .next,
 .table-condensed .prev {
-  background-color: #13577a;
+  background-color: #36C8AF;
   color: #fff;
   transition: 0.5s;
   cursor: pointer;
@@ -3063,7 +3063,7 @@ h6 {
   top: 0;
   width: 100%;
   height: 0;
-  background-color: #13577a;
+  background-color: #36C8AF;
   z-index: -1;
   transition: 0.5s;
 }
@@ -3110,7 +3110,7 @@ h6 {
   text-decoration: none;
 }
 .cart-table table tbody tr td.product-subtotal .remove {
-  color: #13577a;
+  color: #36C8AF;
   float: right;
   position: relative;
   top: -1px;
@@ -3143,7 +3143,7 @@ h6 {
 }
 .cart-table table tbody tr td.product-quantity .input-counter input {
   height: 45px;
-  color: #13577a;
+  color: #36C8AF;
   outline: 0;
   display: block;
   border: none;
@@ -3161,7 +3161,7 @@ h6 {
   td.product-quantity
   .input-counter
   input::-moz-placeholder {
-  color: #13577a;
+  color: #36C8AF;
 }
 .cart-table
   table
@@ -3170,7 +3170,7 @@ h6 {
   td.product-quantity
   .input-counter
   input::placeholder {
-  color: #13577a;
+  color: #36C8AF;
 }
 .cart-table table tbody tr td.product-subtotal,
 .single-blog-details .comments-area .comment-respond .comment-form {
@@ -3184,14 +3184,14 @@ h6 {
   height: 53px;
   outline: 0;
   box-shadow: none;
-  border: 1px solid #13577a;
+  border: 1px solid #36C8AF;
 }
 .cart-buttons .shopping-coupon-code button {
   position: absolute;
   right: 0;
   top: 0;
   height: 53px;
-  background: #13577a;
+  background: #36C8AF;
   color: #fff;
   border: none;
   padding: 0 25px;
@@ -3207,16 +3207,16 @@ h6 {
 }
 .cart-buttons .default-btn {
   padding: 14px 30px;
-  background-color: #13577a;
+  background-color: #36C8AF;
   color: #fff;
-  border: 1px solid #13577a;
+  border: 1px solid #36C8AF;
   text-decoration: none;
   display: inline-block;
 }
 .cart-buttons .default-btn:hover,
 .product-details-desc .product-add-to-cart .default-btn:hover {
   background-color: #fff;
-  color: #13577a;
+  color: #36C8AF;
   transition: 0.6s;
 }
 .cart-totals {
@@ -3322,7 +3322,7 @@ h6 {
 .testimonials-slider .testimonials-item .content span,
 .user-actions span a:focus,
 .user-actions span a:hover {
-  color: #13577a;
+  color: #36C8AF;
 }
 .billing-details .title,
 .order-details .title {
@@ -3340,7 +3340,7 @@ h6 {
 .widget-projects-area .widget-title::before {
   content: "";
   position: absolute;
-  background: #13577a;
+  background: #36C8AF;
   bottom: -1px;
   left: 0;
   width: 50px;
@@ -3383,7 +3383,7 @@ h6 {
 .billing-details .form-group .form-control:focus,
 .sign-in-form form .form-control:focus,
 .signup-form form .form-control:focus {
-  border-color: #13577a;
+  border-color: #36C8AF;
   outline: 0;
   box-shadow: none;
 }
@@ -3504,7 +3504,7 @@ h6 {
   content: "";
   width: 12px;
   height: 12px;
-  background: #13577a;
+  background: #36C8AF;
   position: absolute;
   top: 6px;
   left: 3px;
@@ -3604,8 +3604,8 @@ h6 {
   line-height: initial;
 }
 .product-details-desc .product-review .rating-count:hover {
-  color: #13577a;
-  border-color: #13577a;
+  color: #36C8AF;
+  border-color: #36C8AF;
   text-decoration: none;
 }
 .clients-slider .clients-item .content .info,
@@ -3659,9 +3659,9 @@ h6 {
 }
 .product-details-desc .product-add-to-cart .default-btn {
   position: relative;
-  border: 1px solid #13577a;
+  border: 1px solid #36C8AF;
   padding: 12px 30px;
-  background-color: #13577a;
+  background-color: #36C8AF;
   color: #fff;
 }
 .product-details-desc .buy-checkbox-btn .cbx {
@@ -3718,15 +3718,15 @@ h6 {
   color: #666;
 }
 .product-details-desc .buy-checkbox-btn .cbx:hover span:first-child {
-  border-color: #13577a;
+  border-color: #36C8AF;
 }
 .product-details-desc
   .buy-checkbox-btn
   .inp-cbx:checked
   + .cbx
   span:first-child {
-  background: #13577a;
-  border-color: #13577a;
+  background: #36C8AF;
+  border-color: #36C8AF;
   animation: 0.4s wave;
 }
 .product-details-desc
@@ -3807,8 +3807,8 @@ h6 {
 .products-details-tab .tabs li a:hover,
 .products-details-tab .tabs li.current a {
   color: #fff;
-  background-color: #13577a;
-  border-color: #13577a;
+  background-color: #36C8AF;
+  border-color: #36C8AF;
 }
 .products-details-tab .tab_content {
   border: 1px dashed #eee;
@@ -3894,8 +3894,8 @@ h6 {
   right: 0;
   bottom: 0;
   padding: 14px 25px;
-  background-color: #13577a;
-  border: 1px solid #13577a;
+  background-color: #36C8AF;
+  border: 1px solid #36C8AF;
   color: #fff;
   transition: 0.6s;
 }
@@ -3907,7 +3907,7 @@ h6 {
   .review-title
   .default-btn:hover {
   background-color: #fff;
-  color: #13577a;
+  color: #36C8AF;
   text-decoration: none;
 }
 .products-details-tab
@@ -4007,7 +4007,7 @@ h6 {
 }
 .related-products .products-title span {
   font-size: 14px;
-  color: #13577a;
+  color: #36C8AF;
 }
 .related-products .products-title h2 {
   font-size: 30px;
@@ -4092,7 +4092,7 @@ h6 {
   bottom: 0;
   width: 0%;
   height: 100%;
-  background-color: #13577a;
+  background-color: #36C8AF;
   z-index: -1;
   transition: 0.5s;
 }
@@ -4126,7 +4126,7 @@ h6 {
   bottom: 0;
   width: 100%;
   height: 0;
-  background-color: #13577a;
+  background-color: #36C8AF;
   z-index: -1;
   transition: 0.5s;
 }
@@ -4157,7 +4157,7 @@ h6 {
 .testimonials-slider .testimonials-item .content .icon i {
   line-height: 50px;
   background-color: #e1f1fc;
-  color: #13577a;
+  color: #36C8AF;
   text-align: center;
   font-size: 20px;
 }
@@ -4268,7 +4268,7 @@ h6 {
   margin-bottom: 0;
 }
 .emergency-form .content i {
-  color: #13577a;
+  color: #36C8AF;
   font-size: 35px;
   margin-right: 5px;
 }
@@ -4337,7 +4337,7 @@ h6 {
   width: 0%;
   height: 100%;
   border-radius: 5px;
-  background-color: #13577a;
+  background-color: #36C8AF;
   z-index: -1;
   transition: 0.5s;
 }
@@ -4377,7 +4377,7 @@ h6 {
   width: 100%;
   height: 0%;
   border-radius: 0;
-  background-color: #13577a;
+  background-color: #36C8AF;
   z-index: -1;
   transition: 0.5s;
 }
@@ -4411,7 +4411,7 @@ h6 {
   width: 70px;
   line-height: 70px;
   background-color: #fff;
-  color: #13577a;
+  color: #36C8AF;
   box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
   text-align: center;
   border-radius: 50px;
@@ -4547,7 +4547,7 @@ h6 {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #13577a;
+  background-color: #36C8AF;
 }
 .faq-accordion-content {
   background-color: #fff;
@@ -4587,7 +4587,7 @@ h6 {
   width: 40px;
   text-align: center;
   height: 100%;
-  background: #13577a;
+  background: #36C8AF;
   color: #fff;
 }
 .faq-accordion-content .accordion .accordion-title i::before {
@@ -4750,7 +4750,7 @@ h6 {
   .social
   li
   a:hover {
-  color: #13577a;
+  color: #36C8AF;
   transform: translateY(-2px);
 }
 .pagination-area {
@@ -4772,7 +4772,7 @@ h6 {
 .pagination-area .page-numbers.current,
 .pagination-area .page-numbers:focus,
 .pagination-area .page-numbers:hover {
-  background: #13577a;
+  background: #36C8AF;
   color: #fff;
 }
 .projects-details-desc h3 {
@@ -4793,7 +4793,7 @@ h6 {
   line-height: 1.8;
 }
 .projects-details-desc .features-list li i {
-  color: #13577a;
+  color: #36C8AF;
   position: absolute;
   left: 0;
   top: 8px;
@@ -4962,7 +4962,7 @@ h6 {
 }
 .error-content .default-btn {
   display: inline-block;
-  background-color: #13577a;
+  background-color: #36C8AF;
   padding: 14px 30px;
   border-radius: 30px;
   color: #fff;
@@ -4989,7 +4989,7 @@ h6 {
 }
 .contact-form form .form-control:focus {
   background-color: transparent;
-  border-color: #13577a;
+  border-color: #36C8AF;
   outline: 0;
   box-shadow: unset;
 }
@@ -5025,7 +5025,7 @@ h6 {
   background: #f7fafd;
   border-radius: 50%;
   font-size: 30px;
-  color: #13577a;
+  color: #36C8AF;
   transition: 0.5s;
   margin-bottom: 15px;
 }
@@ -5489,7 +5489,7 @@ h6 {
   z-index: 1;
   border: none;
   color: #fff;
-  background-color: #13577a;
+  background-color: #36C8AF;
   transition: 0.5s;
   cursor: pointer;
 }
@@ -5583,7 +5583,7 @@ h6 {
   z-index: -1;
   width: 100%;
   height: 0%;
-  background: #13577a;
+  background: #36C8AF;
   border-radius: 0;
   transition: 0.5s;
 }
@@ -5593,7 +5593,7 @@ h6 {
   z-index: -1;
 }
 .single-counter:hover {
-  border: 1px solid #13577a;
+  border: 1px solid #36C8AF;
 }
 .footer-area {
   background-color: #060f1e;
@@ -5628,7 +5628,7 @@ h6 {
   height: 40px;
   width: 40px;
   line-height: 40px;
-  background-color: #13577a;
+  background-color: #36C8AF;
   color: #fff;
   text-align: center;
   border-radius: 30px;
@@ -5659,7 +5659,7 @@ h6 {
   position: absolute;
   left: 0;
   font-size: 25px;
-  color: #13577a;
+  color: #36C8AF;
 }
 .single-footer-widget .footer-info-contact h3 {
   margin-bottom: 5px;
@@ -5739,7 +5739,7 @@ h6 {
   top: 0;
   right: 15px;
   color: #fff;
-  background-color: #13577a;
+  background-color: #36C8AF;
   z-index: 4;
   width: 40px;
   text-align: center;
@@ -5811,7 +5811,7 @@ h6 {
   position: absolute;
 }
 .buy-now-btn:hover {
-  background-color: #13577a;
+  background-color: #36C8AF;
   color: #fff !important;
 }
 @keyframes tada {
