@@ -36,7 +36,7 @@ const routeServices = {
 };
 
 const pathContact = "/contact";
-const contactus = React.lazy(() => import("./pages/contact/Contact"));
+const contactus = React.lazy(() => import("./pages/contact/contact"));
 const routeContact = {
   path: pathContact,
   element: contactus,

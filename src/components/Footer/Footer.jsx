@@ -55,7 +55,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="col-lg-3 col-sm-6">
+          {/* <div className="col-lg-3 col-sm-6">
             <div className="single-footer-widget">
               <h3>Instagram</h3>
 
@@ -92,7 +92,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
 
           <div className="col-lg-3 col-sm-6">
             <div className="single-footer-widget pl-5">
