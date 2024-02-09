@@ -28,7 +28,6 @@ export default function Navbar() {
       <nav>
         <Link to="/" className="link">
           <img src={navLogo} alt=""></img>
-          PhysioOne
         </Link>
         <div className="menu-items">
           {AppRoutes.routes.map((route, index) => (
