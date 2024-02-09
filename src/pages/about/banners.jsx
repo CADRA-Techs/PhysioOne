@@ -121,7 +121,7 @@ function Banners() {
                     compassionate support. Experience the difference in your
                     journey to optimal well-being today
                   </p>
-                  <a href="contact-us.html" className="btn btn-primary">
+                  <a href="/contact" className="btn btn-primary">
                     Contact With Us
                   </a>
                 </div>

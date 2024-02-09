@@ -25,8 +25,7 @@ function Services() {
     },
     {
       header: "Musculoskeletal injury rehabilitation ",
-      description:
-        " Healing and strengthening muscles, bones, and joints",
+      description: " Healing and strengthening muscles, bones, and joints",
     },
     {
       header: "Paediatric rehabilitation ",
@@ -35,8 +34,7 @@ function Services() {
     },
     {
       header: "Geriatric rehabilitation ",
-      description:
-        " Enhancing mobility and quality of life for seniors.",
+      description: " Enhancing mobility and quality of life for seniors.",
     },
     {
       header: "Obstetric and gynaecology ",
@@ -50,8 +48,7 @@ function Services() {
     },
     {
       header: "Sports injury rehabilitation",
-      description:
-        " Getting athletes back to peak performance safely.",
+      description: " Getting athletes back to peak performance safely.",
     },
     {
       header: "Corporate wellness",
@@ -171,17 +168,15 @@ function Services() {
                 <p>
                   Many healthcare systems around the world together with
                   government agencies and startup companies are building and
-                  delivering Telehealth
+                  delivering Telehealth We can send your prescription directly
+                  to your local pharmacy for easy pick-up. Many healthcare
+                  systems around the world together with government agencies and
+                  startup companies are building and delivering Telehealth
                 </p>
-                <b>
-                  We can send your prescription directly to your local pharmacy
-                  for easy pick-up. Many healthcare systems around the world
-                  together with government agencies and startup companies are
-                  building and delivering Telehealth
-                </b>
+                {/* <b></b> */}
 
                 <div className="step-btn">
-                  <a href="services.html#" className="default-btn">
+                  <a href="#" className="default-btn">
                     Make Appointment
                     <span></span>
                   </a>
