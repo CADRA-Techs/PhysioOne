@@ -14,26 +14,26 @@ function Footer() {
     addressUrl: "https://maps.app.goo.gl/jSuo4WvQKFNCuxaS6",
   };
   return (
-    <section class="footer-area pt-100 pb-70">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-3 col-sm-6">
-            <div class="single-footer-widget">
+    <section className="footer-area pt-100 pb-70">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-lg-3 col-sm-6">
+            <div className="single-footer-widget">
               <h3>Physio One</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore aliqua.
               </p>
-              <ul class="footer-social">
+              <ul className="footer-social">
                 <li>
                   <a href="team.html#">
-                    <i class="fab fa-facebook-f"></i>
+                    <i className="fab fa-facebook-f"></i>
                   </a>
                 </li>
 
                 <li>
                   <a href="team.html#">
-                    <i class="fab fa-twitter"></i>
+                    <i className="fab fa-twitter"></i>
                   </a>
                 </li>
 
@@ -42,24 +42,24 @@ function Footer() {
                     href="https://www.instagram.com/_physio_one_/"
                     target="_blank"
                   >
-                    <i class="fab fa-instagram"></i>
+                    <i className="fab fa-instagram"></i>
                   </a>
                 </li>
 
                 <li>
                   <a href="team.html#">
-                    <i class="fab fa-linkedin-in"></i>
+                    <i className="fab fa-linkedin-in"></i>
                   </a>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div class="col-lg-3 col-sm-6">
-            <div class="single-footer-widget">
+          {/* <div className="col-lg-3 col-sm-6">
+            <div className="single-footer-widget">
               <h3>Instagram</h3>
 
-              <ul class="instagram">
+              <ul className="instagram">
                 <li>
                   <a href="team.html#">
                     <img src="assets/img/instagram/1.jpg" alt="image" />
@@ -92,13 +92,13 @@ function Footer() {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
 
-          <div class="col-lg-3 col-sm-6">
-            <div class="single-footer-widget pl-5">
+          <div className="col-lg-3 col-sm-6">
+            <div className="single-footer-widget pl-5">
               <h3>Useful Links</h3>
 
-              <ul class="footer-quick-links">
+              <ul className="footer-quick-links">
                 <li>
                   <a href="index.html">Home</a>
                 </li>
@@ -123,22 +123,22 @@ function Footer() {
             </div>
           </div>
 
-          <div class="col-lg-3 col-sm-6">
-            <div class="single-footer-widget">
+          <div className="col-lg-3 col-sm-6">
+            <div className="single-footer-widget">
               <h3>Contact</h3>
 
-              <div class="footer-info-contact">
-                <i class="flaticon-call"></i>
+              <div className="footer-info-contact">
+                <i className="flaticon-call"></i>
                 <h3>Phone</h3>
                 <span>
                   <a href={`tel:${footerConfig.phone.value}`}>
-                    {footerConfig.phone.value}
+                    {footerConfig.phone.label}
                   </a>
                 </span>
               </div>
 
-              <div class="footer-info-contact">
-                <i class="flaticon-email"></i>
+              <div className="footer-info-contact">
+                <i className="flaticon-email"></i>
                 <h3>Email</h3>
                 <span>
                   <a href={`mailto:${footerConfig.email}`}>
@@ -147,8 +147,8 @@ function Footer() {
                 </span>
               </div>
 
-              <div class="footer-info-contact">
-                <i class="flaticon-pin"></i>
+              <div className="footer-info-contact">
+                <i className="flaticon-pin"></i>
                 <h3>Address</h3>
                 <a href={footerConfig.addressUrl} target="_blank">
                   {Object.values(footerConfig.address).map((line, index) => (
@@ -164,10 +164,10 @@ function Footer() {
         </div>
       </div>
 
-      <div class="lines">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
+      <div className="lines">
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
       </div>
     </section>
   );
