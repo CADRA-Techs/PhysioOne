@@ -9,7 +9,7 @@ import bannerImg3 from './assets/img/banner-img3.png';
 import featureService1 from './assets/img/feature-service-1.jpg';
 import featureService2 from './assets/img/feature-service-2.jpg';
 import featureService3 from './assets/img/feature-service-3.jpg';
-
+import TeamOfDocsComponent  from '../teamOfDocs/TeamOfDocs';
 
 function Home() {
   const featured_service=[
@@ -175,7 +175,7 @@ function Home() {
                 </div>
             </div>
         </section>
-
+        <TeamOfDocsComponent/>
         <div className="features-section-sixteen">
             <div className="container">
                 <div className="row">
