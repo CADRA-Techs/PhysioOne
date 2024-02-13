@@ -3,7 +3,6 @@ import Image1 from "./assets/img/image1.jpg";
 import Image2 from "./assets/img/image2.jpg";
 import Image3 from "./assets/img/image3.jpg";
 import BreadCrumb from "../../components/Breadcrumb/BreadCrumb";
-import Footer from "../../components/Footer/Footer";
 
 export const TeamOfDocsComponent = () => {
   const docDetails = [
@@ -89,7 +88,7 @@ export const TeamOfDocsComponent = () => {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row" style={{ justifyContent: "center" }}>
           {docDetails.map((_d, index) => (
             <React.Fragment key={index}>{renderDoctorCard(_d)}</React.Fragment>
           ))}

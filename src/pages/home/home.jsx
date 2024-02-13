@@ -1,4 +1,5 @@
 import "./assets/styles/home.css";
+import OwlCarousel from "react-owl-carousel";
 import headerIcon from "./assets/img/header-icon.svg";
 import downArrowImg from "./assets/img/down-arrow-img.png";
 import bannerImg from "./assets/img/banner-img.png";
@@ -9,8 +10,98 @@ import featureService1 from "./assets/img/feature-service-1.jpg";
 import featureService2 from "./assets/img/feature-service-2.jpg";
 import featureService3 from "./assets/img/feature-service-3.jpg";
 import { TeamOfDocsComponent } from "../teamOfDocs/TeamOfDocs";
+import NeedToKnow from "../../components/NeedToKnow/NeedToKnow";
+import Testimonals from "../../components/Testimonials/Testimonals";
+import HomeContactBanner from "../../components/HomeContactBanner/HomeContactBanner";
 
 function Home() {
+  const featured_service = [
+    {
+      image: featureService1,
+      tittle: "Mommy Makeover",
+      discription: (
+        <p>
+          Facial procedures are popular because of their ability to give
+          patients a youthful appearance, reduce the signs of aging and by
+          improving existing features for more aesthetically pleasing results.
+          These methods are in two separate categories and are commonly known as
+          facial rejuvenation and facial contouring. Facial rejuvenation
+          consists of facelift, eyelid lift, neck lift and brow lift .
+        </p>
+      ),
+    },
+    {
+      image: featureService2,
+      tittle: "Mommy Makeover2",
+      discription: (
+        <p>
+          Facial procedures are popular because of their ability to give
+          patients a youthful appearance, reduce the signs of aging and by
+          improving existing features for more aesthetically pleasing results.
+          These methods are in two separate categories and are commonly known as
+          facial rejuvenation and facial contouring. Facial rejuvenation
+          consists of facelift, eyelid lift, neck lift and brow lift .
+        </p>
+      ),
+    },
+    {
+      image: featureService3,
+      tittle: "Mommy Makeover3",
+      discription: (
+        <p>
+          Facial procedures are popular because of their ability to give
+          patients a youthful appearance, reduce the signs of aging and by
+          improving existing features for more aesthetically pleasing results.
+          These methods are in two separate categories and are commonly known as
+          facial rejuvenation and facial contouring. Facial rejuvenation
+          consists of facelift, eyelid lift, neck lift and brow lift .
+        </p>
+      ),
+    },
+    {
+      image: featureService1,
+      tittle: "Mommy Makeover",
+      discription: (
+        <p>
+          Facial procedures are popular because of their ability to give
+          patients a youthful appearance, reduce the signs of aging and by
+          improving existing features for more aesthetically pleasing results.
+          These methods are in two separate categories and are commonly known as
+          facial rejuvenation and facial contouring. Facial rejuvenation
+          consists of facelift, eyelid lift, neck lift and brow lift .
+        </p>
+      ),
+    },
+    {
+      image: featureService2,
+      tittle: "Mommy Makeover2",
+      discription: (
+        <p>
+          Facial procedures are popular because of their ability to give
+          patients a youthful appearance, reduce the signs of aging and by
+          improving existing features for more aesthetically pleasing results.
+          These methods are in two separate categories and are commonly known as
+          facial rejuvenation and facial contouring. Facial rejuvenation
+          consists of facelift, eyelid lift, neck lift and brow lift .
+        </p>
+      ),
+    },
+    {
+      image: featureService3,
+      tittle: "Mommy Makeover3",
+      discription: (
+        <p>
+          Facial procedures are popular because of their ability to give
+          patients a youthful appearance, reduce the signs of aging and by
+          improving existing features for more aesthetically pleasing results.
+          These methods are in two separate categories and are commonly known as
+          facial rejuvenation and facial contouring. Facial rejuvenation
+          consists of facelift, eyelid lift, neck lift and brow lift .
+        </p>
+      ),
+    },
+  ];
+
   return (
     <>
       <section className="banner-section">
@@ -27,7 +118,7 @@ function Home() {
                   alt="header-icon"
                 />
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
-                <a href="#" className="btn">
+                <a href="booking.html" className="btn">
                   Start a Consult
                 </a>
                 <div className="banner-arrow-img">
@@ -35,7 +126,7 @@ function Home() {
                 </div>
               </div>
               <div className="search-box-one aos">
-                <form action="#">
+                <form action="search-2.html">
                   <div className="search-input search-line">
                     <i className="feather-search bficon"></i>
                     <div className="form-group mb-0">
@@ -75,7 +166,7 @@ function Home() {
       <br />
       <section className="top-services-area pb-70">
         <div className="container">
-          <div className="row">
+          <div className="row" style={{ justifyContent: "center" }}>
             <div className="col-lg-4 col-md-6">
               <div className="top-services-content two">
                 <div className="icon">
@@ -119,7 +210,7 @@ function Home() {
       </section>
       <br />
       <br />
-      <section className="step-two ptb-100">
+      {/* <section className="step-two ptb-100">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -138,7 +229,7 @@ function Home() {
                 </b>
 
                 <div className="step-btn">
-                  <a href="#" className="default-btn">
+                  <a href="index-4.html#" className="default-btn">
                     Download
                     <span></span>
                   </a>
@@ -153,9 +244,11 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <NeedToKnow />
       <TeamOfDocsComponent />
-
+      <Testimonals />
+      <HomeContactBanner />
       <div className="features-section-sixteen">
         <div className="container">
           <div className="row">
@@ -166,95 +259,51 @@ function Home() {
               </div>
             </div>
           </div>
-
-          <div className="row">
-            <div className="feature-sixteen-main col">
-              <div className="feature-six-img">
-                <img src={featureService1} alt="image" className="img-fluid" />
-                <div className="feature-content-six">
-                  <div className="feature-content-one">
-                    <h5>Mommy Makeover</h5>
-                    <span>
-                      <i className="fa-solid fa-angle-up"></i>
-                    </span>
-                  </div>
-                  <div className="feature-content-two">
-                    <p>
-                      Facial procedures are popular because of their ability to
-                      give patients a youthful appearance, reduce the signs of
-                      aging and by improving existing features for more
-                      aesthetically pleasing results. These methods are in two
-                      separate categories and are commonly known as facial
-                      rejuvenation and facial contouring. Facial rejuvenation
-                      consists of facelift, eyelid lift, neck lift and brow
-                      lift.
-                    </p>
-                    <span>
-                      <i className="fa-solid fa-angle-down"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="feature-sixteen-main col">
-              <div className="feature-six-img">
-                <img src={featureService2} alt="image" className="img-fluid" />
-                <div className="feature-content-six">
-                  <div className="feature-content-one">
-                    <h5>Face Makeover</h5>
-                    <span>
-                      <i className="fa-solid fa-angle-up"></i>
-                    </span>
-                  </div>
-                  <div className="feature-content-two">
-                    <p>
-                      Facial procedures are popular because of their ability to
-                      give patients a youthful appearance, reduce the signs of
-                      aging and by improving existing features for more
-                      aesthetically pleasing results. These methods are in two
-                      separate categories and are commonly known as facial
-                      rejuvenation and facial contouring. Facial rejuvenation
-                      consists of facelift, eyelid lift, neck lift and brow
-                      lift.
-                    </p>
-                    <span>
-                      <i className="fa-solid fa-angle-down"></i>
-                    </span>
+          <OwlCarousel
+            className="owl-carousel features-slider-sixteen owl-theme"
+            loop
+            autoplay
+            autoplayTimeout={3500}
+            dots
+            items={3}
+            responsive={{
+              0: {
+                items: 1,
+              },
+              600: {
+                items: 2,
+              },
+              1000: {
+                items: 3,
+                nav: true,
+              },
+            }}
+          >
+            {featured_service.map((ele) => (
+              <div
+                className="feature-sixteen-main"
+                style={{ marginRight: "10px" }}
+              >
+                <div className="feature-six-img">
+                  <img src={ele.image} alt="image" className="img-fluid" />
+                  <div className="feature-content-six">
+                    <div className="feature-content-one">
+                      <h5>{ele.tittle}</h5>
+                      <span>
+                        <i className="fa-solid fa-angle-up"></i>
+                      </span>
+                    </div>
+                    <div className="feature-content-two">
+                      <p>{ele.discription}</p>
+                      <span>
+                        <i className="fa-solid fa-angle-down"></i>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="feature-sixteen-main col">
-              <div className="feature-six-img">
-                <img src={featureService3} alt="image" className="img-fluid" />
-                <div className="feature-content-six">
-                  <div className="feature-content-one">
-                    <h5>BodyTite</h5>
-                    <span>
-                      <i className="fa-solid fa-angle-up"></i>
-                    </span>
-                  </div>
-                  <div className="feature-content-two">
-                    <p>
-                      Facial procedures are popular because of their ability to
-                      give patients a youthful appearance, reduce the signs of
-                      aging and by improving existing features for more
-                      aesthetically pleasing results. These methods are in two
-                      separate categories and are commonly known as facial
-                      rejuvenation and facial contouring. Facial rejuvenation
-                      consists of facelift, eyelid lift, neck lift and brow
-                      lift.
-                    </p>
-                    <span>
-                      <i className="fa-solid fa-angle-down"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Add more similar elements for other features */}
-          </div>
+            ))}
+          </OwlCarousel>
         </div>
       </div>
     </>
