@@ -10,7 +10,7 @@ import partner4 from "../about/assets/img/partners/4.jpg";
 import partner5 from "../about/assets/img/partners/5.jpg";
 import partner6 from "../about/assets/img/partners/6.jpg";
 import partner7 from "../about/assets/img/partners/7.jpg";
-import Banners from "./Banners";
+import Banners from "./banners";
 import FullScreenTestimonals from "../../components/FullScreenTestimonals/FullScreenTestimonals";
 import BreadCrumb from "../../components/Breadcrumb/BreadCrumb";
 
@@ -94,17 +94,14 @@ function About() {
               <div className="about-content">
                 <div className="about-content-details">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur.
+                  Cultivating the philosophy that movement is indeed medicine, Physio One is dedicated to empowering individuals on their journey to wellness. 
+                  Through our comprehensive approach to physiotherapy, we harness the inherent healing potential of the human body.
+                   Whether recovering from injury, managing chronic conditions, or striving for peak performance, 
+                   our expert team crafts tailored treatment plans that prioritize movement as the cornerstone of rehabilitation and vitality.
                   </p>
                   <p>
-                    Sed ut perspiciatis unde omnis iste natus sit voluptatem
-                    accusantium doloremque eaque ipsa quae architecto beatae
-                    vitae dicta sunt explicabo.
+                  At Physio One, we don't just treat symptoms; we ignite the body's innate capacity to heal through motion,
+                   guiding our patients toward restored function, enhanced well-being, and a life in motion.
                   </p>
                 </div>
                 <div className="about-contact">
