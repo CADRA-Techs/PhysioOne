@@ -29,11 +29,11 @@ function Banners() {
                     </span>
                   </div>
                   <div className="why-choose-content">
-                    <h4>Qualified Staff of Doctors</h4>
+                    <h4>Expertise and Experience</h4>
                     <p>
-                      Lorem ipsum sit amet consectetur incididunt ut labore et
-                      exercitation ullamco laboris nisi dolore magna enim veniam
-                      aliqua.{" "}
+                      Highlight the qualifications and experience of your
+                      physiotherapists, showcasing their expertise in various
+                      treatment modalities and specialties.
                     </p>
                   </div>
                 </div>
@@ -48,11 +48,11 @@ function Banners() {
                     </span>
                   </div>
                   <div className="why-choose-content">
-                    <h4>Qualified Staff of Doctors</h4>
+                    <h4>Personalized Care</h4>
                     <p>
-                      Lorem ipsum sit amet consectetur incididunt ut labore et
-                      exercitation ullamco laboris nisi dolore magna enim veniam
-                      aliqua.{" "}
+                      Emphasize your commitment to providing individualized
+                      treatment plans tailored to each patient's unique needs
+                      and goals.
                     </p>
                   </div>
                 </div>
@@ -67,11 +67,11 @@ function Banners() {
                     </span>
                   </div>
                   <div className="why-choose-content">
-                    <h4>Qualified Staff of Doctors</h4>
+                    <h4>Evidence-Based Practices</h4>
                     <p>
-                      Lorem ipsum sit amet consectetur incididunt ut labore et
-                      exercitation ullamco laboris nisi dolore magna enim veniam
-                      aliqua.{" "}
+                      Assure potential clients that your treatments are based on
+                      the latest research and evidence-based practices, ensuring
+                      the most effective and safest interventions.
                     </p>
                   </div>
                 </div>
@@ -86,11 +86,11 @@ function Banners() {
                     </span>
                   </div>
                   <div className="why-choose-content">
-                    <h4>Qualified Staff of Doctors</h4>
+                    <h4>Patient-Centered Approach</h4>
                     <p>
-                      Lorem ipsum sit amet consectetur incididunt ut labore et
-                      exercitation ullamco laboris nisi dolore magna enim veniam
-                      aliqua.{" "}
+                      Communicate your focus on patient satisfaction and
+                      comfort, with a compassionate and supportive environment
+                      that prioritizes open communication and collaboration.
                     </p>
                   </div>
                 </div>
@@ -113,13 +113,15 @@ function Banners() {
             <div className="row align-items-end">
               <div className="col-lg-7 col-md-12">
                 <div className="section-inner-header way-inner-header mb-0">
-                  <h2>Be on Your Way to Feeling Better with the Doccure</h2>
+                  <h2>Where one step leads to infinite wellness: physio-one</h2>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    Committed to personalized care and holistic wellness
+                    solutions. At Physio-One, we're dedicated to helping you
+                    achieve your health goals with expert guidance and
+                    compassionate support. Experience the difference in your
+                    journey to optimal well-being today
                   </p>
-                  <a href="contact-us.html" className="btn btn-primary">
+                  <a href="/contact" className="btn btn-primary">
                     Contact With Us
                   </a>
                 </div>

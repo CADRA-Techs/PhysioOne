@@ -11,13 +11,13 @@ const routeUserManagement = {
   name: "Home",
 };
 
-const pathTeamOfDocs = "/doctors";
-const teamOfDocs = React.lazy(() => import("./pages/teamOfDocs/TeamOfDocs"));
-const routeTeamOfDocs = {
-  path: pathTeamOfDocs,
-  element: teamOfDocs,
-  name: "Doctors",
-};
+// const pathTeamOfDocs = "/doctors";
+// const teamOfDocs = React.lazy(() => import("./pages/teamOfDocs/TeamOfDocs"));
+// const routeTeamOfDocs = {
+//   path: pathTeamOfDocs,
+//   element: teamOfDocs,
+//   name: "Doctors",
+// };
 
 const pathAbout = "/about";
 const about = React.lazy(() => import("./pages/about/About"));
@@ -45,7 +45,7 @@ const routeContact = {
 
 const routes = [
   routeUserManagement,
-  routeTeamOfDocs,
+  // routeTeamOfDocs,
   routeAbout,
   routeServices,
   routeContact,
@@ -55,7 +55,7 @@ const AppRoutes = Object.freeze({
   routes,
   pathAppBase,
   pathHome,
-  pathTeamOfDocs,
+  // pathTeamOfDocs,
   pathAbout,
   pathServices,
   pathContact,
