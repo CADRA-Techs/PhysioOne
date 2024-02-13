@@ -1,10 +1,10 @@
 const { merge } = require("webpack-merge");
 const path = require("path");
+const webpack = require("webpack");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 const APP_PUBLIC_PATH = process.env.REACT_APP_PUBLIC_PATH;
 const deps = require("./package.json").dependencies;
-console.log(path);
 
 const commonConfig = {
   entry: {
@@ -45,6 +45,10 @@ const commonConfig = {
           loader: "babel-loader",
         },
       },
+      {
+        test: /\.(png|jpg|jpeg|gif|svg)$/i,
+        type: "asset/resource",
+      },
     ],
   },
 
@@ -68,6 +72,16 @@ const commonConfig = {
     }),
     new HtmlWebPackPlugin({
       template: "./src/index.html",
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery",
+    }),
+    new ModuleFederationPlugin({
+      shared: {
+        jquery: { singleton: true },
+      },
     }),
   ],
 };
