@@ -5,6 +5,7 @@ import client3 from "./assets/img/client-03.jpg";
 import client4 from "./assets/img/client-04.jpg";
 import shape04 from "./assets/img/shape-04.png";
 import shape05 from "./assets/img/shape-05.png";
+import Slider from "react-slick";
 
 function Testimonals() {
   const testimonialData = [
@@ -75,11 +76,11 @@ function Testimonals() {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="testimonial-slider slick">
+              <Slider className="testimonial-slider ">
                 {testimonialData.map((_tData) =>
                   renderTestimonialCards(_tData)
                 )}
-              </div>
+              </Slider>
             </div>
           </div>
         </div>

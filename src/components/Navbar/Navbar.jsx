@@ -5,6 +5,7 @@ import AppRoutes from "../../AppRoutes";
 import React, { useState } from "react";
 import closeIcon from "./assets/img/close.png";
 import barIcon from "./assets/img/menu.png";
+import navLogo from "./assets/img/nav-logo.png";
 
 export default function Navbar() {
   const [isopen, setisopen] = useState(false);
@@ -26,7 +27,7 @@ export default function Navbar() {
     return (
       <nav>
         <Link to="/" className="link">
-          PhysioOne
+          <img src={navLogo} alt=""></img>
         </Link>
         <div className="menu-items">
           {AppRoutes.routes.map((route, index) => (
