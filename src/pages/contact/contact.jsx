@@ -20,12 +20,12 @@ export default function Contact() {
   const contactConfig = {
     email: "physioone.ak@gmail.com",
     instaUrl: "https://www.instagram.com/_physio_one_/",
-    phone: [
-      { label: "+91 93607 46496", value: "+919360746496" },
-      { label: "+91 88386 82626", value: "+918838682626" },
-    ],
+    phone: { label: "+91 93607 46496", value: "+919360746496" },
     address: {
-      0: "Thudiyalur Rd, Near Sankara College bus stop, Saravanampatti, Coimbatore, Tamil Nadu - 641035.",
+      0: "Thudiyalur Rd, Near Sankara College bus stop,",
+      1: "V.N, Pudur, Near Reliance Smart,",
+      2: "Saravanampatti, Coimbatore,",
+      3: "Tamil Nadu - 641035.",
     },
     addressUrl: "https://maps.app.goo.gl/jSuo4WvQKFNCuxaS6",
   };
@@ -62,7 +62,7 @@ export default function Contact() {
         <div className="container">
           <div className="row">
             <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="contact-info-box" style={{ height: "100%" }}>
+              <div className="contact-info-box">
                 <div className="icon">
                   <i className="flaticon-email"></i>
                 </div>
@@ -82,7 +82,7 @@ export default function Contact() {
             </div>
 
             <div className="col-lg-4 col-md-6 col-sm-6">
-              <div className="contact-info-box" style={{ height: "100%" }}>
+              <div className="contact-info-box">
                 <div className="icon">
                   <i className="flaticon-pin"></i>
                 </div>
@@ -101,19 +101,22 @@ export default function Contact() {
             </div>
 
             <div className="col-lg-4 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
-              <div className="contact-info-box" style={{ height: "100%" }}>
+              <div className="contact-info-box">
                 <div className="icon">
                   <i className="flaticon-phone-call"></i>
                 </div>
 
                 <h3>Call Here</h3>
-                {contactConfig.phone.map((phoneD) => {
-                  return (
-                    <p>
-                      <a href={`tel:${phoneD.value}`}>{phoneD.label}</a>
-                    </p>
-                  );
-                })}
+                <p>
+                  <a href={`tel:${contactConfig.phone.value}`}>
+                    {contactConfig.phone.label}
+                  </a>
+                </p>
+                <p>
+                  <a href={`tel:${contactConfig.phone.value}`}>
+                    {contactConfig.phone.label}
+                  </a>
+                </p>
               </div>
             </div>
           </div>
@@ -235,11 +238,11 @@ export default function Contact() {
         <div id="google_map" style={{ width: "100%", height: "500px" }}>
           <iframe
             title="Google Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.4038001037434!2d76.98491349999999!3d11.0832528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f734ec91a7e1%3A0x60fa142f3fe7efb0!2sPhysio%20one!5e0!3m2!1sen!2sin!4v1707462750219!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.985681352466!2d77.33375001469823!3d11.114444092092679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba907a52e380aff%3A0x15457ba0fab7546d!2sRK%20Residency!5e0!3m2!1sen!2sin!4v1572006867944!5m2!1sen!2sin"
             width="100%"
             height="100%"
-            allowFullScreen=""
-          ></iframe>
+            allowFullScreen="">
+          </iframe>
         </div>
       </center>
     </>
