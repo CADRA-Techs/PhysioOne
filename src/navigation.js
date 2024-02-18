@@ -5,7 +5,7 @@ import Home from "./pages/home/home";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Error404 from "./pages/error404/Error404";
-
+import TopHeader from "./components/topHeader/TopHeader";
 function Navigation() {
   return (
     <Suspense
@@ -15,6 +15,7 @@ function Navigation() {
         </div>
       }
     >
+      <TopHeader/>
       <Navbar />
       <Routes>
         {AppRoutes.routes.map((route, idx) => {
@@ -27,8 +28,8 @@ function Navigation() {
             />
           ) : null;
         })}
-        <Route path="*" element={<Error404 />} />
         <Route path="/" element={<Home />} />
+        <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer />
     </Suspense>

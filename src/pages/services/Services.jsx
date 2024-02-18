@@ -1,6 +1,8 @@
 import React from "react";
-import img1 from "./assets/img/consult.jpg";
+import img1 from "./assets/img/step-three-image.png";
+import OwlCarousel from "react-owl-carousel";
 import BreadCrumb from "../../components/Breadcrumb/BreadCrumb";
+import Slider from "react-slick";
 
 function Services() {
   const pageDetails = {
@@ -14,84 +16,84 @@ function Services() {
     {
       header: "Orthopaedic rehabilitation ",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        "  Restoring movement and function after bone or joint injuries.",
     },
     {
       header: "Neurological rehabilitation",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        " Regaining independence and mobility following neurological conditions.",
     },
     {
       header: "Musculoskeletal injury rehabilitation ",
-      description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+      description: " Healing and strengthening muscles, bones, and joints",
     },
     {
       header: "Paediatric rehabilitation ",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        " Supporting children in reaching their developmental milestones.",
     },
     {
       header: "Geriatric rehabilitation ",
-      description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+      description: " Enhancing mobility and quality of life for seniors.",
     },
     {
       header: "Obstetric and gynaecology ",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        " Tailored care for women's health needs during and after pregnancy.",
     },
     {
       header: "Cardio thoracic rehabilitation",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        "  Rehabilitating heart and lung function for improved cardiovascular health.",
     },
     {
       header: "Sports injury rehabilitation",
-      description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+      description: " Getting athletes back to peak performance safely.",
     },
     {
       header: "Corporate wellness",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        " Promoting employee health and productivity through tailored programs.",
     },
     {
       header: "Bobath",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        " Specialized therapy for individuals with neurological conditions like cerebral palsy.",
     },
     {
-      header: "PNF",
+      header: "PNF(Proprioceptive Neuromuscular Facilitation)",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        " Utilizing patterns of movement to improve flexibility and strength.",
     },
     {
       header: "Posture Correction",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        " Correcting alignment to prevent pain and improve posture-related issues.",
     },
     {
       header: "Ergonomic Correction",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        "Enhancing workspace comfort and safety to prevent musculoskeletal issues.",
     },
     {
       header: "Resisted Exercises",
       description:
-        " Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore dolore",
+        " Strengthening muscles and improving endurance through resistance training.",
     },
   ];
   const renderServiceCards = (header, description) => {
     return (
-      <div className="col-lg-4 col-md-6">
+      <div style={{ padding: "0 15px" }}>
         <div className="services-item-two">
           <div className="icon">
-            <i className="flaticon-pregnancy"></i>
+            <i className="flaticon-shield"></i>
           </div>
-
-          <h3>{header}</h3>
-          <p>{description}</p>
+          <div style={{ minHeight: "60px" }}>
+            <h3>{header}</h3>
+          </div>
+          <div style={{ minHeight: "90px" }}>
+            <p>{description}</p>
+          </div>
         </div>
       </div>
     );
@@ -100,7 +102,7 @@ function Services() {
     <>
       <BreadCrumb page={pageDetails} />
       <section className="services-section bg-f4f6fe pt-100 pb-100">
-        <div className="container-fluid">
+        <div className="container-fluid" style={{ padding: "0 40px" }}>
           <div className="section-title">
             <span>Our Services</span>
             <h2>Our Healthcare Services</h2>
@@ -111,12 +113,41 @@ function Services() {
             </p>
           </div>
 
-          <div className="row">
-            {serviceCardDetails.map((details, idx) => (
-              <React.Fragment key={idx}>
-                {renderServiceCards(details.header, details.description)}
-              </React.Fragment>
-            ))}
+          <div className="slider-container">
+            <Slider
+              className="testimonials-slider"
+              infinite={true}
+              autoplay={true}
+              slidesToScroll={1}
+              slidesToShow={3}
+              rows={2}
+              responsive={[
+                {
+                  breakpoint: 1900,
+                  settings: {
+                    slidesToShow: 3,
+                  },
+                },
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 2,
+                  },
+                },
+                {
+                  breakpoint: 700,
+                  settings: {
+                    slidesToShow: 1,
+                  },
+                },
+              ]}
+            >
+              {serviceCardDetails.map((details, idx) => (
+                <React.Fragment key={idx}>
+                  {renderServiceCards(details.header, details.description)}
+                </React.Fragment>
+              ))}
+            </Slider>
           </div>
         </div>
       </section>
@@ -132,22 +163,19 @@ function Services() {
 
             <div className="col-lg-6">
               <div className="step-three-content">
-                <span>Step 3</span>
                 <h3>Pick Up Your Prescription from Your Local Doctor.</h3>
                 <p>
                   Many healthcare systems around the world together with
                   government agencies and startup companies are building and
-                  delivering Telehealth
+                  delivering Telehealth We can send your prescription directly
+                  to your local pharmacy for easy pick-up. Many healthcare
+                  systems around the world together with government agencies and
+                  startup companies are building and delivering Telehealth
                 </p>
-                <b>
-                  We can send your prescription directly to your local pharmacy
-                  for easy pick-up. Many healthcare systems around the world
-                  together with government agencies and startup companies are
-                  building and delivering Telehealth
-                </b>
+                {/* <b></b> */}
 
                 <div className="step-btn">
-                  <a href="services.html#" className="default-btn">
+                  <a href="#" className="default-btn">
                     Make Appointment
                     <span></span>
                   </a>

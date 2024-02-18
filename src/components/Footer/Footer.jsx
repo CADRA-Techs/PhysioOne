@@ -26,13 +26,13 @@ function Footer() {
               </p>
               <ul className="footer-social">
                 <li>
-                  <a href="team.html#">
+                  <a href="#">
                     <i className="fab fa-facebook-f"></i>
                   </a>
                 </li>
 
                 <li>
-                  <a href="team.html#">
+                  <a href="#">
                     <i className="fab fa-twitter"></i>
                   </a>
                 </li>
@@ -47,7 +47,7 @@ function Footer() {
                 </li>
 
                 <li>
-                  <a href="team.html#">
+                  <a href="#">
                     <i className="fab fa-linkedin-in"></i>
                   </a>
                 </li>
@@ -56,42 +56,42 @@ function Footer() {
           </div>
 
           <div className="col-lg-3 col-sm-6">
-            <div className="single-footer-widget">
+            {/*<div className="single-footer-widget">
               <h3>Instagram</h3>
 
               <ul className="instagram">
                 <li>
-                  <a href="team.html#">
+                  <a href="#">
                     <img src="assets/img/instagram/1.jpg" alt="image" />
                   </a>
                 </li>
                 <li>
-                  <a href="team.html#">
+                  <a href="#">
                     <img src="assets/img/instagram/2.jpg" alt="image" />
                   </a>
                 </li>
                 <li>
-                  <a href="team.html#">
+                  <a href="#">
                     <img src="assets/img/instagram/3.jpg" alt="image" />
                   </a>
                 </li>
                 <li>
-                  <a href="team.html#">
+                  <a href="#">
                     <img src="assets/img/instagram/4.jpg" alt="image" />
                   </a>
                 </li>
                 <li>
-                  <a href="team.html#">
+                  <a href="#">
                     <img src="assets/img/instagram/1.jpg" alt="image" />
                   </a>
                 </li>
                 <li>
-                  <a href="team.html#">
+                  <a href="#">
                     <img src="assets/img/instagram/2.jpg" alt="image" />
                   </a>
                 </li>
               </ul>
-            </div>
+            </div>*/}
           </div>
 
           <div className="col-lg-3 col-sm-6">
@@ -100,24 +100,16 @@ function Footer() {
 
               <ul className="footer-quick-links">
                 <li>
-                  <a href="index.html">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li>
-                  <a href="about.html">About</a>
+                  <a href="/about">About</a>
                 </li>
                 <li>
-                  <a href="solution.html">Solution</a>
+                  <a href="/services">Solution</a>
                 </li>
                 <li>
-                  <a href="services.html">Services</a>
-                </li>
-                <li>
-                  <a href="https://templates.envytheme.com/tinzer/default/blog.html">
-                    Blog
-                  </a>
-                </li>
-                <li>
-                  <a href="contact.html">Contact</a>
+                  <a href="/contact">Contact Us</a>
                 </li>
               </ul>
             </div>
@@ -132,7 +124,7 @@ function Footer() {
                 <h3>Phone</h3>
                 <span>
                   <a href={`tel:${footerConfig.phone.value}`}>
-                    {footerConfig.phone.value}
+                    {footerConfig.phone.label}
                   </a>
                 </span>
               </div>
