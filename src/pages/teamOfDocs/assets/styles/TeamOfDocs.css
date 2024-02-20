@@ -1,0 +1,19 @@
+.doctor-item:hover .content {
+  max-width: 300px !important;
+}
+.qualification-list li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.doctor-item .image img {
+  height: 100% !important;
+  width: 100% !important;
+}
+.qualification-seperator {
+  padding-left: 30px !important;
+  margin-right: 0px !important;
+  padding-right: 30px !important;
+  width: 70%;
+  border-top: 1px solid #ddd;
+}

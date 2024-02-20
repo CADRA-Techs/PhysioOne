@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "./assets/img/consult.jpg";
+import img1 from "./assets/img/step-three-image.png";
 import OwlCarousel from "react-owl-carousel";
 import BreadCrumb from "../../components/Breadcrumb/BreadCrumb";
 import Slider from "react-slick";
@@ -163,7 +163,6 @@ function Services() {
 
             <div className="col-lg-6">
               <div className="step-three-content">
-                <span>Step 3</span>
                 <h3>Pick Up Your Prescription from Your Local Doctor.</h3>
                 <p>
                   Many healthcare systems around the world together with
