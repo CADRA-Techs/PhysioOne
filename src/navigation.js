@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Error404 from "./pages/error404/Error404";
 import TopHeader from "./components/topHeader/TopHeader";
+
 function Navigation() {
   return (
     <Suspense
@@ -15,7 +16,7 @@ function Navigation() {
         </div>
       }
     >
-      <TopHeader/>
+      <TopHeader />
       <Navbar />
       <Routes>
         {AppRoutes.routes.map((route, idx) => {
