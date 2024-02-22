@@ -1,32 +1,70 @@
 import React from "react";
-import Image1 from "./assets/img/image1.jpg";
-import Image2 from "./assets/img/image2.jpg";
-import Image3 from "./assets/img/image3.jpg";
+import Kaleeswaran from "./assets/img/Kaleeswaran.jpeg";
+import Kartheepan from "./assets/img/Kartheepan.png";
+import Sakirtharaj from "./assets/img/Sakirtharaj.jpeg";
+import Sivaramakrishnan from "./assets/img/Sivaramakrishnan.jpeg";
+import Vignesh from "./assets/img/Vignesh.jpg";
+
 import BreadCrumb from "../../components/Breadcrumb/BreadCrumb";
-import Footer from "../../components/Footer/Footer";
+import "./assets/styles/TeamOfDocs.css";
 
 export const TeamOfDocsComponent = () => {
   const docDetails = [
     {
-      profileImage: Image1,
-      fullName: "Dr. Sample Text",
-      desig: "Sample Text",
+      profileImage: Kaleeswaran,
+      fullName: "Dr. KALEESWARAN A",
+      desig: "B.P.T, M.P.T (Neuro)",
       embedSocial: false,
+      qualifications: [
+        "Certified Dry needling therapist(CDNT)",
+        "Certified in Instrument Assisted Soft Tissue Mobilisation (CIASTM)",
+        "Certified on-field therapeutic tapping therapist (COFTTT)",
+        "Advanced biomechanical correction of spine and peripheral joints",
+      ],
     },
     {
-      profileImage: Image2,
-      fullName: "Dr. Sample Text",
-      desig: "Sample Text",
+      profileImage: Kartheepan,
+      fullName: "Dr.KARTHEEPAN K",
+      desig: "B.P.T, M.P.T (Cardio)",
       embedSocial: false,
+      qualifications: [
+        "Exercise prescription Specialised in shoulder rehabilitation",
+      ],
     },
     {
-      profileImage: Image3,
-      fullName: "Dr. Sample Text",
-      desig: "Sample Text",
-      embedSocial: true,
-      facebookUrl: "www.facebook.com",
-      instagramUrl: "www.instagram.com",
+      profileImage: Sivaramakrishnan,
+      fullName: "Dr.SIVARAMAKRISHNAN K",
+      desig: "B.P.T, M.P.T (Neuro)",
+      embedSocial: false,
+      qualifications: ["Specialized in frozen shoulder and Geriatric care"],
     },
+    {
+      profileImage: Vignesh,
+      fullName: "Dr.VIGNESH N.",
+      desig: "B.P.T, M.P.T (Neuro)",
+      embedSocial: false,
+      qualifications: [
+        "DYHE Neuro Rehabilitation , Paediatric Care and Neuromuscular Exercise Rehabilitation",
+      ],
+    },
+    {
+      profileImage: Sakirtharaj,
+      fullName: "Dr. SAKIRTHARAJ M",
+      desig: " B.P.T, M.P.T (Sports)",
+      embedSocial: false,
+      qualifications: [
+        "Sports injury and rehabilitation Certified on-field therapeutic tapping therapist (COFTTT)",
+      ],
+    },
+
+    // {
+    //   profileImage: Image3,
+    //   fullName: "Dr. Sample Text",
+    //   desig: "Sample Text",
+    //   embedSocial: true,
+    //   facebookUrl: "www.facebook.com",
+    //   instagramUrl: "www.instagram.com",
+    // },
   ];
 
   const renderDoctorCard = (doctorDetails) => (
@@ -38,7 +76,16 @@ export const TeamOfDocsComponent = () => {
         <div className="content">
           <h3>{doctorDetails.fullName}</h3>
           <span>{doctorDetails.desig}</span>
-          {doctorDetails.embedSocial && (
+          <ul className="social qualification-list">
+            {doctorDetails.qualifications &&
+              doctorDetails.qualifications.map((qual, idx) => (
+                <>
+                  <li className="qualification-seperator"></li>
+                  <li>{qual}</li>
+                </>
+              ))}
+          </ul>
+          {/* {doctorDetails.embedSocial && (
             <ul className="social">
               {doctorDetails.facebookUrl && (
                 <li>
@@ -69,7 +116,7 @@ export const TeamOfDocsComponent = () => {
                 </li>
               )}
             </ul>
-          )}
+          )} */}
         </div>
       </div>
     </div>
@@ -89,7 +136,7 @@ export const TeamOfDocsComponent = () => {
           </div>
         </div>
 
-        <div className="row">
+        <div className="row" style={{ justifyContent: "center" }}>
           {docDetails.map((_d, index) => (
             <React.Fragment key={index}>{renderDoctorCard(_d)}</React.Fragment>
           ))}
