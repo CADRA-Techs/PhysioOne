@@ -15,6 +15,6 @@ import "./pages/assets/plugins/fontawesome/css/all.min.css";
 import "./pages/assets/css/flaticon.css";
 
 import "./pages/assets/css/custom.css";
-import "./pages/assets/css/style.css"
-import "./common/styles/style.css";
+import "./pages/assets/css/style.css";
+// import "./common/styles/style.css";
 import "./index.css";
