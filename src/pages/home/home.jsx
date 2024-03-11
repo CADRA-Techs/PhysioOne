@@ -3,12 +3,8 @@ import OwlCarousel from "react-owl-carousel";
 import headerIcon from "./assets/img/header-icon.svg";
 import downArrowImg from "./assets/img/down-arrow-img.png";
 import bannerImg from "./assets/img/banner-img.png";
-import bannerImg1 from "./assets/img/banner-img1.png";
 import bannerImg2 from "./assets/img/banner-img2.png";
-import bannerImg3 from "./assets/img/banner-img3.png";
 import featureService1 from "./assets/img/feature-service-1.jpg";
-import featureService2 from "./assets/img/feature-service-2.jpg";
-import featureService3 from "./assets/img/feature-service-3.jpg";
 import { TeamOfDocsComponent } from "../teamOfDocs/TeamOfDocs";
 import NeedToKnow from "../../components/NeedToKnow/NeedToKnow";
 import Testimonals from "../../components/Testimonials/Testimonals";
@@ -18,85 +14,63 @@ function Home() {
   const featured_service = [
     {
       image: featureService1,
-      tittle: "Mommy Makeover",
+      tittle: "Orthopaedic rehabilitation",
       discription: (
         <p>
-          Facial procedures are popular because of their ability to give
-          patients a youthful appearance, reduce the signs of aging and by
-          improving existing features for more aesthetically pleasing results.
-          These methods are in two separate categories and are commonly known as
-          facial rejuvenation and facial contouring. Facial rejuvenation
-          consists of facelift, eyelid lift, neck lift and brow lift .
+          Our Orthopaedic rehabilitation focuses on restoring mobility and
+          strength after surgery or injury, helping you regain your freedom of
+          movement
         </p>
       ),
     },
     {
       image: featureService2,
-      tittle: "Mommy Makeover2",
+      tittle: "Musculoskeletal injury rehabilitation ",
       discription: (
         <p>
-          Facial procedures are popular because of their ability to give
-          patients a youthful appearance, reduce the signs of aging and by
-          improving existing features for more aesthetically pleasing results.
-          These methods are in two separate categories and are commonly known as
-          facial rejuvenation and facial contouring. Facial rejuvenation
-          consists of facelift, eyelid lift, neck lift and brow lift .
+          Musculoskeletal assessments and treatments ensure you can move
+          comfortably and without pain
         </p>
       ),
     },
     {
       image: featureService3,
-      tittle: "Mommy Makeover3",
+      tittle: "Ergonomic Correction",
       discription: (
         <p>
-          Facial procedures are popular because of their ability to give
-          patients a youthful appearance, reduce the signs of aging and by
-          improving existing features for more aesthetically pleasing results.
-          These methods are in two separate categories and are commonly known as
-          facial rejuvenation and facial contouring. Facial rejuvenation
-          consists of facelift, eyelid lift, neck lift and brow lift .
+          Ergonomic assessments and adjustments to improve your work setup and
+          prevent discomfort
         </p>
       ),
     },
     {
       image: featureService1,
-      tittle: "Mommy Makeover",
+      tittle: "Orthopaedic rehabilitation",
       discription: (
         <p>
-          Facial procedures are popular because of their ability to give
-          patients a youthful appearance, reduce the signs of aging and by
-          improving existing features for more aesthetically pleasing results.
-          These methods are in two separate categories and are commonly known as
-          facial rejuvenation and facial contouring. Facial rejuvenation
-          consists of facelift, eyelid lift, neck lift and brow lift .
+          Our Orthopaedic rehabilitation focuses on restoring mobility and
+          strength after surgery or injury, helping you regain your freedom of
+          movement
         </p>
       ),
     },
     {
       image: featureService2,
-      tittle: "Mommy Makeover2",
+      tittle: "Musculoskeletal injury rehabilitation",
       discription: (
         <p>
-          Facial procedures are popular because of their ability to give
-          patients a youthful appearance, reduce the signs of aging and by
-          improving existing features for more aesthetically pleasing results.
-          These methods are in two separate categories and are commonly known as
-          facial rejuvenation and facial contouring. Facial rejuvenation
-          consists of facelift, eyelid lift, neck lift and brow lift .
+          Musculoskeletal assessments and treatments ensure you can move
+          comfortably and without pain
         </p>
       ),
     },
     {
       image: featureService3,
-      tittle: "Mommy Makeover3",
+      tittle: "Ergonomic Correction",
       discription: (
         <p>
-          Facial procedures are popular because of their ability to give
-          patients a youthful appearance, reduce the signs of aging and by
-          improving existing features for more aesthetically pleasing results.
-          These methods are in two separate categories and are commonly known as
-          facial rejuvenation and facial contouring. Facial rejuvenation
-          consists of facelift, eyelid lift, neck lift and brow lift .
+          Ergonomic assessments and adjustments to improve your work setup and
+          prevent discomfort .
         </p>
       ),
     },
@@ -149,14 +123,8 @@ function Home() {
             <div className="col-lg-6">
               <div className="banner-img aos">
                 <img src={bannerImg} className="img-fluid" alt="" />
-                <div className="banner-img1">
-                  <img src={bannerImg1} className="img-fluid" alt="" />
-                </div>
                 <div className="banner-img2">
                   <img src={bannerImg2} className="img-fluid" alt="" />
-                </div>
-                <div className="banner-img3">
-                  <img src={bannerImg3} className="img-fluid" alt="" />
                 </div>
               </div>
             </div>
@@ -174,8 +142,9 @@ function Home() {
                 </div>
                 <h3>Reduce Health Care Cost</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
+                  At Physio-One, we focus on preventative care and
+                  evidence-based practices to minimize healthcare expenses and
+                  ensure long-term health.
                 </p>
               </div>
             </div>
@@ -187,8 +156,9 @@ function Home() {
                 </div>
                 <h3>Reduce Pressure on Medical Staff</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
+                  Our dedicated team of physiotherapists supports the healthcare
+                  system by managing and preventing conditions, reducing the
+                  burden on hospitals
                 </p>
               </div>
             </div>
@@ -200,8 +170,8 @@ function Home() {
                 </div>
                 <h3>Continuum Of Care</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna
+                  From assessment to rehabilitation and beyond, our continuum of
+                  care ensures a seamless journey towards your optimal health
                 </p>
               </div>
             </div>
