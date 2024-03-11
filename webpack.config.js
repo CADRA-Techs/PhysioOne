@@ -72,6 +72,7 @@ const commonConfig = {
     }),
     new HtmlWebPackPlugin({
       template: "./src/index.html",
+      favicon: "./src/favicon.png",
     }),
     new webpack.ProvidePlugin({
       $: "jquery",
