@@ -5,10 +5,15 @@ import AppRoutes from "../../AppRoutes";
 import React, { useState } from "react";
 import closeIcon from "./assets/img/close.png";
 import barIcon from "./assets/img/menu.png";
-import navLogo from "./assets/img/nav-logo.png";
+import navLogo from "./assets/img/HeaderLogo.png";
 
 export default function Navbar() {
   const [isopen, setisopen] = useState(false);
+  const opacityClasses = [
+    "sidebar-container",
+    isopen ? "opacity-on" : "opacity-off",
+  ];
+
   const toggle = () => {
     setisopen(!isopen);
   };
@@ -46,19 +51,13 @@ export default function Navbar() {
   };
 
   const CustomSidebar = ({ isopen, toggle }) => {
-    let opacityClasses = ["sidebar-container"];
-    if (isopen) {
-      opacityClasses.push("opacity-on");
-    } else {
-      opacityClasses.push("opacity-off");
-    }
+    const opacityClasses = [
+      "sidebar-container",
+      isopen ? "opacity-on" : "opacity-off",
+    ];
 
     return (
-      <div
-        className={opacityClasses.join(" ")}
-        isopen={isopen.toString()}
-        onClick={toggle}
-      >
+      <div className={opacityClasses.join(" ")} onClick={toggle}>
         <div className="sidebar-icon">
           <img onClick={toggle} src={closeIcon}></img>
         </div>

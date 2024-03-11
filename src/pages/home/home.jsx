@@ -3,12 +3,8 @@ import OwlCarousel from "react-owl-carousel";
 import headerIcon from "./assets/img/header-icon.svg";
 import downArrowImg from "./assets/img/down-arrow-img.png";
 import bannerImg from "./assets/img/banner-img.png";
-import bannerImg1 from "./assets/img/banner-img1.png";
 import bannerImg2 from "./assets/img/banner-img2.png";
-import bannerImg3 from "./assets/img/banner-img3.png";
 import featureService1 from "./assets/img/feature-service-1.jpg";
-import featureService2 from "./assets/img/feature-service-2.jpg";
-import featureService3 from "./assets/img/feature-service-3.jpg";
 import { TeamOfDocsComponent } from "../teamOfDocs/TeamOfDocs";
 import NeedToKnow from "../../components/NeedToKnow/NeedToKnow";
 import Testimonals from "../../components/Testimonials/Testimonals";
@@ -127,14 +123,8 @@ function Home() {
             <div className="col-lg-6">
               <div className="banner-img aos">
                 <img src={bannerImg} className="img-fluid" alt="" />
-                <div className="banner-img1">
-                  <img src={bannerImg1} className="img-fluid" alt="" />
-                </div>
                 <div className="banner-img2">
                   <img src={bannerImg2} className="img-fluid" alt="" />
-                </div>
-                <div className="banner-img3">
-                  <img src={bannerImg3} className="img-fluid" alt="" />
                 </div>
               </div>
             </div>

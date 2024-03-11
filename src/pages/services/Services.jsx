@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "./assets/img/step-three-image.png";
+import img1 from "./assets/img/consult.png";
 import OwlCarousel from "react-owl-carousel";
 import BreadCrumb from "../../components/Breadcrumb/BreadCrumb";
 import Slider from "react-slick";
