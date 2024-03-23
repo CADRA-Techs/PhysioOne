@@ -32,12 +32,6 @@ function Footer() {
                 </li>
 
                 <li>
-                  <a href="#">
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </li>
-
-                <li>
                   <a
                     href="https://www.instagram.com/_physio_one_/"
                     target="_blank"

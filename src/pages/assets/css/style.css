@@ -1874,6 +1874,7 @@ h6 {
   color: #fff;
 }
 .top-services-content.two {
+  min-height: 330px;
   border: 2px solid #fff;
   transition: 0.5s;
 }
