@@ -8,32 +8,38 @@ import img4 from "./assets/img/4.png";
 // import hexagon from "./assets/img/hexagon-group-2.png";
 import img1 from "./assets/img/hreat-pulse.svg";
 function NeedToKnow() {
-  const [activeTab, setActiveTab] = useState("why_physio");
+  const [activeTab, setActiveTab] = useState("Musculoskeletal");
   const needToKnowContent = {
-    why_physio: {
-      buttonLabel: "Why Physio",
-      header: "Heart valve disease",
+    Musculoskeletal: {
+      buttonLabel: "Musculoskeletal",
+      header: "Musculoskeletal Injuries",
       description:
-        "If one of the valves in your heart becomes diseased it can affect the flow of blood. This can happen in one of two ways: valve stenosis (where the valve does not fully open and obstructs or restricts flow) or valve incompetence (where the valve does not close properly and blood is allowed to leak backwards)....",
+        "Physiotherapy is often prescribed for injuries to muscles, bones, joints, ligaments, or tendons. This includes conditions such as sprains, strains, fractures, arthritis, and post-surgical rehabilitation.",
     },
-    what_physio: {
-      buttonLabel: "What Physio",
-      header: "Heart failure",
+    Neurological: {
+      buttonLabel: "Neurological",
+      header: "Neurological Disorders",
       description:
-        " If one of the valves in your heart becomes diseased it can affect the flow of blood. This can happen in one of two ways: valve stenosis (where the valve does not fully open and obstructs or restricts flow) or valve incompetence (where the valve does not close properly and blood is allowed to leak backwards)....",
+        "Physiotherapy plays a crucial role in managing neurological conditions such as stroke, Parkinson's disease, multiple sclerosis, spinal cord injuries, and traumatic brain injuries. It focuses on improving mobility, balance, coordination, and functional independence.",
     },
-    when_physio: {
-      buttonLabel: "When Physio",
-      header: "Pacemakers and defibrillators",
+    Cardiorespiratory: {
+      buttonLabel: "Cardiorespiratory",
+      header: "Cardiorespiratory Conditions",
       description:
-        " If one of the valves in your heart becomes diseased it can affect the flow of blood. This can happen in one of two ways: valve stenosis (where the valve does not fully open and obstructs or restricts flow) or valve incompetence (where the valve does not close properly and blood is allowed to leak backwards)....",
+        "Physiotherapy interventions are beneficial for individuals with cardiorespiratory disorders like chronic obstructive pulmonary disease (COPD), asthma, cystic fibrosis, and post-cardiac surgery rehabilitation. It involves breathing exercises, airway clearance techniques, and aerobic conditioning to enhance respiratory function and endurance.",
+    },
+    Chronic: {
+      buttonLabel: "Chronic Pain",
+      header: "Chronic Pain Management",
+      description:
+        "Physiotherapy offers non-pharmacological approaches to manage chronic pain conditions such as low back pain, neck pain, fibromyalgia, and osteoarthritis. Treatment may include manual therapy, therapeutic exercise, electrotherapy modalities, and pain education to reduce pain intensity and improve functional abilities.",
     },
   };
   return (
     <div className="main-wrapper home-ten">
       <section className="need-to-know-section">
-        <div class="section-floating-bg">
-          <img src={hexagen} alt />
+        <div className="section-floating-bg">
+          <img src={hexagen} alt="hexagon" />
           {/* <img src={hexagon} alt /> */}
         </div>
 
@@ -49,7 +55,7 @@ function NeedToKnow() {
                 </h2>
                 <ul className="nav nav-pills" id="pills-tab" role="tablist">
                   {Object.entries(needToKnowContent).map(([key, bText]) => (
-                    <li className="nav-item" role="presentation">
+                    <li key={key} className="nav-item" role="presentation">
                       <button
                         className={`nav-link tag-list ${
                           activeTab === key ? "active" : ""
@@ -75,12 +81,12 @@ function NeedToKnow() {
                     <div className="need-to-know-content">
                       <h3>{needToKnowContent[activeTab].header}</h3>
                       <p>{needToKnowContent[activeTab].description}</p>
-                      <a
+                      {/* <a
                         href="booking.html"
                         className=" need-to-know-content-btn"
                       >
                         Read More
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>

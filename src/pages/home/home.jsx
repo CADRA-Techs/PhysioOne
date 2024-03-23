@@ -86,14 +86,18 @@ function Home() {
             <div className="col-lg-6">
               <div className="banner-content aos">
                 <h1>
-                  Consult <span>Best Doctors</span> Your Nearby Location.
+                  Welcome to <span>Physio One</span> Where Wellness Begins
                 </h1>
                 <img
                   src={headerIcon}
                   className="header-icon"
                   alt="header-icon"
                 />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                <p>
+                  Discover Coimbatore's Premier Destination for Advanced
+                  Physiotherapy. Experience Advanced Techniques Tailored to Your
+                  Well-being.
+                </p>
                 <a href="/contact" className="btn">
                   Start a Consult
                 </a>
