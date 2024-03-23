@@ -79,10 +79,10 @@ export const TeamOfDocsComponent = () => {
           <ul className="social qualification-list">
             {doctorDetails.qualifications &&
               doctorDetails.qualifications.map((qual, idx) => (
-                <>
+                <React.Fragment key={idx}>
                   <li className="qualification-seperator"></li>
                   <li>{qual}</li>
-                </>
+                </React.Fragment>
               ))}
           </ul>
           {/* {doctorDetails.embedSocial && (

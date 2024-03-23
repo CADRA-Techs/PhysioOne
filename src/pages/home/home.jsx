@@ -1,7 +1,7 @@
 import "./assets/styles/home.css";
 import OwlCarousel from "react-owl-carousel";
 import headerIcon from "./assets/img/header-icon.svg";
-import downArrowImg from "./assets/img/down-arrow-img.png";
+// import downArrowImg from "./assets/img/down-arrow-img.png";
 import bannerImg from "./assets/img/banner-img.png";
 import bannerImg2 from "./assets/img/banner-img2.png";
 import featureService1 from "./assets/img/feature-service-1.jpg";
@@ -27,7 +27,7 @@ function Home() {
       ),
     },
     {
-      image: featureService2,
+      image: featureService1,
       tittle: "Mommy Makeover2",
       discription: (
         <p>
@@ -41,7 +41,7 @@ function Home() {
       ),
     },
     {
-      image: featureService3,
+      image: featureService1,
       tittle: "Mommy Makeover3",
       discription: (
         <p>
@@ -69,7 +69,7 @@ function Home() {
       ),
     },
     {
-      image: featureService2,
+      image: featureService1,
       tittle: "Mommy Makeover2",
       discription: (
         <p>
@@ -83,7 +83,7 @@ function Home() {
       ),
     },
     {
-      image: featureService3,
+      image: featureService1,
       tittle: "Mommy Makeover3",
       discription: (
         <p>
@@ -114,14 +114,14 @@ function Home() {
                   alt="header-icon"
                 />
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
-                <a href="booking.html" className="btn">
+                <a href="/contact" className="btn">
                   Start a Consult
                 </a>
-                <div className="banner-arrow-img">
-                  <img src={downArrowImg} className="img-fluid" alt="" />
-                </div>
+                {/* <div className="banner-arrow-img">
+                    <img src={downArrowImg} className="img-fluid" alt="" />
+                  </div> */}
               </div>
-              <div className="search-box-one aos">
+              {/* <div className="search-box-one aos">
                 <form action="search-2.html">
                   <div className="search-input search-line">
                     <i className="feather-search bficon"></i>
@@ -132,15 +132,15 @@ function Home() {
                         placeholder="Search doctors, clinics, hospitals, etc"
                       />
                     </div>
-                  </div>
-                  {/* Other input fields */}
-                  <div className="form-search-btn">
+                  </div> */}
+              {/* Other input fields */}
+              {/* <div className="form-search-btn">
                     <button className="btn" type="submit">
                       Search
                     </button>
                   </div>
                 </form>
-              </div>
+              </div> */}
             </div>
             <div className="col-lg-6">
               <div className="banner-img aos">
@@ -269,10 +269,11 @@ function Home() {
               },
             }}
           >
-            {featured_service.map((ele) => (
+            {featured_service.map((ele, idx) => (
               <div
                 className="feature-sixteen-main"
                 style={{ marginRight: "10px" }}
+                key={idx}
               >
                 <div className="feature-six-img">
                   <img src={ele.image} alt="image" className="img-fluid" />
@@ -284,7 +285,7 @@ function Home() {
                       </span>
                     </div>
                     <div className="feature-content-two">
-                      <p>{ele.discription}</p>
+                      {ele.discription}
                       <span>
                         <i className="fa-solid fa-angle-down"></i>
                       </span>
