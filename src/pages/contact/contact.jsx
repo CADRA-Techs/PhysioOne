@@ -122,8 +122,8 @@ export default function Contact() {
             <span>Contact Us</span>
             <h2>Drop us Message for any Query</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Take the first step towards pain-free living. Feel free to reach
+              out with any questions or concerns you may have.
             </p>
           </div>
 

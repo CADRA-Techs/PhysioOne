@@ -129,9 +129,8 @@ export const TeamOfDocsComponent = () => {
             <span>Our Doctors</span>
             <h2>Specialized Doctors</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse
+              Our specialized doctors: Offering focused care to meet your
+              individual needs.
             </p>
           </div>
         </div>

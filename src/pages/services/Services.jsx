@@ -175,7 +175,7 @@ function Services() {
                 {/* <b></b> */}
 
                 <div className="step-btn">
-                  <a href="#" className="default-btn">
+                  <a href="/contact" className="default-btn">
                     Make Appointment
                     <span></span>
                   </a>

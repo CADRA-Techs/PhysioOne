@@ -20,7 +20,7 @@ function HomeContactBanner() {
               your physiotherapy session now
             </p>
             <div className="appointment-btn-group">
-              <a href="booking.html" className="appointment-blue-btn">
+              <a href="/contact" className="appointment-blue-btn">
                 Contact-Us
               </a>
             </div>

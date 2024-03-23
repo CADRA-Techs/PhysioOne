@@ -45,32 +45,34 @@ function Home() {
     },
     {
       image: featureService1,
-      tittle: "Orthopaedic rehabilitation",
+      tittle: "Neurological Rehabilitation",
       discription: (
         <p>
-          Our Orthopaedic rehabilitation focuses on restoring mobility and
-          strength after surgery or injury, helping you regain your freedom of
-          movement
+          Our neurological rehabilitation program offers personalized therapies
+          and cutting-edge techniques to help you regain independence and
+          improve quality of life after a neurological injury or condition.
         </p>
       ),
     },
     {
       image: featureService1,
-      tittle: "Musculoskeletal injury rehabilitation",
+      tittle: "Bobath",
       discription: (
         <p>
-          Musculoskeletal assessments and treatments ensure you can move
-          comfortably and without pain
+          Discover the transformative power of Bobath therapy, a specialized
+          approach that integrates movement analysis and hands-on techniques to
+          facilitate neurological recovery and improve motor function.
         </p>
       ),
     },
     {
       image: featureService1,
-      tittle: "Ergonomic Correction",
+      tittle: "Sports Injury Rehabilitation",
       discription: (
         <p>
-          Ergonomic assessments and adjustments to improve your work setup and
-          prevent discomfort .
+          Get back in the game stronger than ever with our sports injury
+          rehabilitation program, combining advanced therapies and targeted
+          exercises to optimize recovery and prevent re-injury.
         </p>
       ),
     },
@@ -84,14 +86,18 @@ function Home() {
             <div className="col-lg-6">
               <div className="banner-content aos">
                 <h1>
-                  Consult <span>Best Doctors</span> Your Nearby Location.
+                  Welcome to <span>Physio One</span> Where Wellness Begins
                 </h1>
                 <img
                   src={headerIcon}
                   className="header-icon"
                   alt="header-icon"
                 />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                <p>
+                  Discover Coimbatore's Premier Destination for Advanced
+                  Physiotherapy. Experience Advanced Techniques Tailored to Your
+                  Well-being.
+                </p>
                 <a href="/contact" className="btn">
                   Start a Consult
                 </a>
@@ -235,6 +241,7 @@ function Home() {
             autoplay
             autoplayTimeout={3500}
             dots
+            autoplayHoverPause
             items={3}
             responsive={{
               0: {
