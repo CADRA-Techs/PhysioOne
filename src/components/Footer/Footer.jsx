@@ -70,7 +70,7 @@ function Footer() {
                   width="100%"
                   height="100%"
                   allowFullScreen={false}
-                  disable
+                  disable="true"
                 ></iframe>
               </div>
             </div>
@@ -125,7 +125,7 @@ function Footer() {
                   <a href="/about">About</a>
                 </li>
                 <li>
-                  <a href="/services">Solution</a>
+                  <a href="/services">Services</a>
                 </li>
                 <li>
                   <a href="/contact">Contact Us</a>

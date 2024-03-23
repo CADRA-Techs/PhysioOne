@@ -7,8 +7,8 @@ function NeedToKnow() {
   return (
     <div className="main-wrapper home-ten">
       <section className="need-to-know-section">
-        <div class="section-floating-bg">
-          <img src={hexagen} alt />
+        <div className="section-floating-bg">
+          <img src={hexagen} alt="hexagon" />
           {/* <img src={hexagon} alt /> */}
         </div>
 
@@ -142,46 +142,62 @@ function NeedToKnow() {
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-12 aos">
-              <div class="gallery-box-block">
-                <div class="gallery-box-right">
-                  <div class="box-detail">
-                    <div class="steps-list-box">
-                      <div class="steps-list-img">
+            <div className="col-lg-4 col-md-12 aos">
+              <div className="gallery-box-block">
+                <div className="gallery-box-right">
+                  <div className="box-detail">
+                    <div className="steps-list-box">
+                      <div className="steps-list-img">
                         <span>1</span>
-                        <img src={img1} class="img-fluid" alt />
+                        <img
+                          src={img1}
+                          className="img-fluid"
+                          alt="img-doctor"
+                        />
                       </div>
                       <h6>Choose Your Doctor</h6>
                       <p>Lorem Ipsum is simply dummy text of the printing..</p>
                     </div>
                   </div>
-                  <div class="box-detail">
-                    <div class="steps-list-box">
-                      <div class="steps-list-img">
+                  <div className="box-detail">
+                    <div className="steps-list-box">
+                      <div className="steps-list-img">
                         <span>3</span>
-                        <img src={img1} class="img-fluid" alt />
+                        <img
+                          src={img1}
+                          className="img-fluid"
+                          alt="img-doctor2"
+                        />
                       </div>
                       <h6>Consult with doctor</h6>
                       <p>Lorem Ipsum is simply dummy text of the printing..</p>
                     </div>
                   </div>
                 </div>
-                <div class="gallery-box-left">
-                  <div class="box-detail mb-4 ">
-                    <div class="steps-list-box">
-                      <div class="steps-list-img">
+                <div className="gallery-box-left">
+                  <div className="box-detail mb-4 ">
+                    <div className="steps-list-box">
+                      <div className="steps-list-img">
                         <span>2</span>
-                        <img src={img1} class="img-fluid" alt />
+                        <img
+                          src={img1}
+                          className="img-fluid"
+                          alt="img-set-appointment"
+                        />
                       </div>
                       <h6>Set Appointment</h6>
                       <p>Lorem Ipsum is simply dummy text of the printing..</p>
                     </div>
                   </div>
-                  <div class="box-detail">
-                    <div class="steps-list-box">
-                      <div class="steps-list-img">
+                  <div className="box-detail">
+                    <div className="steps-list-box">
+                      <div className="steps-list-img">
                         <span>4</span>
-                        <img src={img1} class="img-fluid" alt />
+                        <img
+                          src={img1}
+                          className="img-fluid"
+                          alt="img-get-recommendation"
+                        />
                       </div>
                       <h6>Get recommendation</h6>
                       <p>Lorem Ipsum is simply dummy text of the printing..</p>

@@ -77,9 +77,11 @@ function Testimonals() {
           <div className="row">
             <div className="col-md-12">
               <Slider className="testimonial-slider ">
-                {testimonialData.map((_tData) =>
-                  renderTestimonialCards(_tData)
-                )}
+                {testimonialData.map((_tData, idx) => (
+                  <React.Fragment key={idx}>
+                    {renderTestimonialCards(_tData)}
+                  </React.Fragment>
+                ))}
               </Slider>
             </div>
           </div>
