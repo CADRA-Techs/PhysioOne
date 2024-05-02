@@ -6,12 +6,12 @@ function Footer() {
     instaUrl: "https://www.instagram.com/_physio_one_/",
     phone: { label: "+91 93607 46496", value: "+919360746496" },
     address: {
-      0: "Thudiyalur Rd, Near Sankara College bus stop,",
-      1: "V.N, Pudur, Near Reliance Smart,",
+      0: "Opposite to E3 Police Station,",
+      1: "Thiruvannamail Nagar,",
       2: "Saravanampatti, Coimbatore,",
       3: "Tamil Nadu - 641035.",
     },
-    addressUrl: "https://maps.app.goo.gl/jSuo4WvQKFNCuxaS6",
+    addressUrl: "https://maps.app.goo.gl/RzXa7UdEoQ366C3v8",
   };
   return (
     <section className="footer-area pt-100 pb-70">
@@ -21,8 +21,9 @@ function Footer() {
             <div className="single-footer-widget">
               <h3>Physio One</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore aliqua.
+                Discover Coimbatore's Premier Destination for Advanced
+                Physiotherapy. Experience Advanced Techniques Tailored to Your
+                Well-being.
               </p>
               <ul className="footer-social">
                 <li>
@@ -60,7 +61,7 @@ function Footer() {
               <div id="google_map" style={{ width: "100%", height: "200px" }}>
                 <iframe
                   title="Google Map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.4038001037434!2d76.98491349999999!3d11.0832528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f734ec91a7e1%3A0x60fa142f3fe7efb0!2sPhysio%20one!5e0!3m2!1sen!2sin!4v1707462750219!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.513753218749!2d77.00000307553779!3d11.075035989092479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f786500c2341%3A0x32e3955e88bb4cd2!2sDEV%20PHYSIOTHERAPY%20CLINIC!5e0!3m2!1sen!2sin!4v1712495088222!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   allowFullScreen={false}

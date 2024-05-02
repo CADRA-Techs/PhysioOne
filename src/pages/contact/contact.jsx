@@ -24,10 +24,16 @@ export default function Contact() {
       { label: "+91 93607 46496", value: "+919360746496" },
       { label: "+91 88386 82626", value: "+918838682626" },
     ],
-    address: {
-      0: "Thudiyalur Rd, Near Sankara College bus stop, Saravanampatti, Coimbatore, Tamil Nadu - 641035.",
-    },
-    addressUrl: "https://maps.app.goo.gl/jSuo4WvQKFNCuxaS6",
+    address: [
+      {
+        text: "Opposite to E3 Police Station, Thiruvannamail Nagar, Saravanampatti, Coimbatore, Tamil Nadu - 641035.",
+        url: "https://maps.app.goo.gl/RzXa7UdEoQ366C3v8",
+      },
+      {
+        text: "Thudiyalur Rd, Near Sankara College bus stop, Saravanampatti, Coimbatore, Tamil Nadu - 641035.",
+        url: "https://maps.app.goo.gl/jSuo4WvQKFNCuxaS6",
+      },
+    ],
   };
 
   const handleChange = (e) => {
@@ -68,16 +74,22 @@ export default function Contact() {
                 </div>
 
                 <h3>Email Here</h3>
-                <p>
-                  <a href={`mailto:${contactConfig.email}`}>
+                <div>
+                  <a
+                    style={{ fontSize: "20px" }}
+                    href={`mailto:${contactConfig.email}`}
+                  >
                     {contactConfig.email}
                   </a>
-                </p>
-                <p>
-                  <a href={`mailto:${contactConfig.email}`}>
+                </div>
+                <div>
+                  <a
+                    style={{ fontSize: "20px" }}
+                    href={`mailto:${contactConfig.email}`}
+                  >
                     {contactConfig.email}
                   </a>
-                </p>
+                </div>
               </div>
             </div>
 
@@ -87,16 +99,26 @@ export default function Contact() {
                   <i className="flaticon-pin"></i>
                 </div>
                 <h3>Location Here</h3>
-                <a href={contactConfig.addressUrl} target="_blank">
-                  <p>
-                    {Object.values(contactConfig.address).map((line, index) => (
-                      <React.Fragment key={index}>
-                        {line}
-                        <br />
-                      </React.Fragment>
-                    ))}
-                  </p>
-                </a>
+
+                <div>
+                  {contactConfig.address.map((line, index) => (
+                    <React.Fragment key={index}>
+                      <a href={line.url} target="_blank">
+                        {line.text}
+                      </a>
+                      {contactConfig.address.length !== index + 1 && (
+                        <div
+                          style={{
+                            width: "100%",
+                            marginTop: "5px",
+                            marginBottom: "5px",
+                          }}
+                          className="qualification-seperator"
+                        />
+                      )}
+                    </React.Fragment>
+                  ))}
+                </div>
               </div>
             </div>
 
@@ -109,9 +131,14 @@ export default function Contact() {
                 <h3>Call Here</h3>
                 {contactConfig.phone.map((phoneD) => {
                   return (
-                    <p>
-                      <a href={`tel:${phoneD.value}`}>{phoneD.label}</a>
-                    </p>
+                    <div>
+                      <a
+                        style={{ fontSize: "20px" }}
+                        href={`tel:${phoneD.value}`}
+                      >
+                        {phoneD.label}
+                      </a>
+                    </div>
                   );
                 })}
               </div>
@@ -235,7 +262,7 @@ export default function Contact() {
         <div id="google_map" style={{ width: "100%", height: "500px" }}>
           <iframe
             title="Google Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.4038001037434!2d76.98491349999999!3d11.0832528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f734ec91a7e1%3A0x60fa142f3fe7efb0!2sPhysio%20one!5e0!3m2!1sen!2sin!4v1707462750219!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.513753218749!2d77.00000307553779!3d11.075035989092479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f786500c2341%3A0x32e3955e88bb4cd2!2sDEV%20PHYSIOTHERAPY%20CLINIC!5e0!3m2!1sen!2sin!4v1712495088222!5m2!1sen!2sin"
             width="100%"
             height="100%"
             allowFullScreen=""

@@ -107,9 +107,9 @@ function Services() {
             <span>Our Services</span>
             <h2>Our Healthcare Services</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-              ipsum suspendisse
+              Discover our comprehensive healthcare services designed to meet
+              your needs and promote your well-being, from rehabilitation to
+              preventative care.
             </p>
           </div>
 
