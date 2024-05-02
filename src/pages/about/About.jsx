@@ -70,7 +70,7 @@ function About() {
                   <div className="col-md-6">
                     <div className="about-inner-img">
                       <div className="about-box">
-                        <h4>Over 25+ Years Experience</h4>
+                        <h4>Over 10+ Years Experience</h4>
                       </div>
                       <div className="about-img">
                         <img
@@ -94,14 +94,36 @@ function About() {
               <div className="about-content">
                 <div className="about-content-details">
                   <p>
-                  Cultivating the philosophy that movement is indeed medicine, Physio One is dedicated to empowering individuals on their journey to wellness. 
-                  Through our comprehensive approach to physiotherapy, we harness the inherent healing potential of the human body.
-                   Whether recovering from injury, managing chronic conditions, or striving for peak performance, 
-                   our expert team crafts tailored treatment plans that prioritize movement as the cornerstone of rehabilitation and vitality.
+                    Welcome to Physio One, where rehabilitation meets
+                    empowerment through movement. At the heart of our philosophy
+                    lies the belief that movement is indeed medicine. With a
+                    commitment to high-quality care at reasonable prices, we
+                    specialize in evidence-based practices that ensure maximum
+                    benefit for our patients.
                   </p>
                   <p>
-                  At Physio One, we don't just treat symptoms; we ignite the body's innate capacity to heal through motion,
-                   guiding our patients toward restored function, enhanced well-being, and a life in motion.
+                    Our dedicated team of experts excels in various domains
+                    including manual therapy, exercise prescription,
+                    biomechanical analysis, neurorehabilitation, advanced
+                    therapeutics, cardiorespiratory rehabilitation, sports
+                    injury prevention and management. Additionally, we offer
+                    specialized care in geriatrics, pediatrics, and women's
+                    health, along with academic-oriented programs and corporate
+                    wellness initiatives.
+                  </p>
+                  <p>
+                    Guided by the principle that the human body possesses
+                    inherent healing potential, we tailor treatment plans to
+                    prioritize movement as the cornerstone of rehabilitation and
+                    vitality. Whether you're recovering from injury, managing
+                    chronic conditions, or aiming for peak performance, we're
+                    here to ignite your body's capacity to heal through motion.
+                  </p>
+                  <p>
+                    At Physio One, we go beyond treating symptoms; we empower
+                    our patients to embrace a life in motion, guiding them
+                    towards restored function, enhanced well-being, and a
+                    journey to wellness.
                   </p>
                 </div>
                 <div className="about-contact">
@@ -112,7 +134,7 @@ function About() {
                   </div>
                   <div className="about-contact-text">
                     <p>Need Emergency?</p>
-                    <h4>+1 315 369 5943</h4>
+                    <h4>+91 93607 46496</h4>
                   </div>
                 </div>
               </div>
@@ -122,7 +144,7 @@ function About() {
       </section>
       <Banners />
       <FullScreenTestimonals />
-      <PartnerDetails />
+      {/* <PartnerDetails /> */}
     </>
   );
 }

@@ -8,7 +8,7 @@ export default function TopHeader() {
               <ul className="top-list">
                 <li style={{ fontSize: "12px", marginBottom: "5px" }}>
                   <i className="flaticon-clock"></i>
-                  Mon-Fri 12:00PM-08:00PM
+                  Mon-Sat 09:00AM - 09:00PM
                 </li>
                 <li style={{ fontSize: "12px", marginBottom: "5px" }}>
                   <i className="flaticon-phone-call"></i>
